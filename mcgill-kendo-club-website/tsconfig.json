@@ -16,9 +16,10 @@
     "module": "preserve",
     "resolveJsonModule": true,
     "esModuleInterop": true,
+    "baseUrl": "./src",
     "paths": {
-      "@app/*": ["./src/app/*"],
-      "@assets/*": ["./src/assets/*"]
+      "@app/*": ["app/*"],
+      "@assets/*": ["assets/*"]
     }
   },
   "angularCompilerOptions": {
@@ -27,13 +28,7 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": [],
-  "references": [
-    {
-      "path": "./tsconfig.app.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
+  "include": [
+    "src/**/*.ts"
   ]
 }
