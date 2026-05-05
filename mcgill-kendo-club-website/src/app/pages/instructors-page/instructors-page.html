@@ -1,0 +1,10 @@
+<app-general-header></app-general-header>
+<div class="instructors-page">
+    <h2>Meet Our Instructors</h2>
+    <div class="instructor-list">
+        @for (instructor of instructors; track instructor.name) {
+            <app-instructor-profile-card [instructor]="instructor"></app-instructor-profile-card>
+        }
+    </div>
+</div>
+<app-general-footer></app-general-footer>
