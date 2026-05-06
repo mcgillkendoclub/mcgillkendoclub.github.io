@@ -1,3 +1,40 @@
 <app-general-header></app-general-header>
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScV9aFQDGseYdfuhJBclI9M2h5beXZwufz5jILxsAfCbjTrVQ/viewform?embedded=true" width="640" height="1139" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+<div class="signup-page">
+
+  <section class="signup-hero">
+    <h1>Join McGill Kendo Club</h1>
+    <p class="signup-subtitle">Fill out the form below to register for the upcoming semester.</p>
+  </section>
+
+  <div class="signup-body">
+
+    <!-- Pricing -->
+    <aside class="pricing-panel">
+        @for (pricingCard of pricingCards; track pricingCard.price) {
+            <app-pricing-card
+                [price]="pricingCard.price"
+                [semester]="pricingCard.semester"
+                [pricingInterval]="pricingCard.pricingInterval"
+                [includedBenefits]="pricingCard.includedBenefits"
+                [importantNotes]="pricingCard.importantNotes">
+            </app-pricing-card>
+        }
+      <app-pricing-card></app-pricing-card>
+    </aside>
+
+    <!-- Google Form -->
+    <div class="form-panel">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScV9aFQDGseYdfuhJBclI9M2h5beXZwufz5jILxsAfCbjTrVQ/viewform?embedded=true"
+        width="100%"
+        height="1139"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0">Loading…</iframe>
+    </div>
+
+  </div>
+</div>
+
 <app-general-footer></app-general-footer>

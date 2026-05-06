@@ -1,0 +1,45 @@
+{
+    "membershipOptions": [
+        {
+            "price": 260,
+            "semester": "Summer",
+            "pricingInterval": "per semester",
+            "includedBenefits": [
+                "Access to Tuesday, Thursday and Saturday regular practices and training sessions",
+                "Instruction from certified sensei",
+                "McGill Athletics facility access",
+                "Price does not include cost of shinai"
+            ],
+            "importantNotes":[
+                "No beginner class offered during the summer semester"
+            ]
+        },
+        {
+            "price": 360,
+            "semester": "Winter or Fall",
+            "pricingInterval": "per semester",
+            "includedBenefits": [
+                "Access to all regular practices and training sessions for both semesters",
+                "Eligibility to participate in club tournaments and events for both semesters",
+                "Instruction from certified sensei",
+                "Beginner classes offered",
+                "Price does not include cost of shinai"
+            ],
+            "importantNotes":[
+                "Thursday practices are reserved for intermediate and advanced practitioners.",
+                "Beginner classes are only offered on Tuesdays and Saturdays."
+            ]
+        },
+        {
+            "price": 10,
+            "pricingInterval": "per practice",
+            "semester": "One-time",
+            "includedBenefits": [
+                
+            ],
+            "importantNotes":[
+                
+            ]
+        }
+    ]
+}

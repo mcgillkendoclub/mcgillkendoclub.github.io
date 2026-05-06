@@ -1,0 +1,15 @@
+<div class="pricing-card">
+    <div class="pricing-label">{{semester}}</div>
+    <div class="pricing-amount"><span class="currency">$</span>{{price}}</div>
+    <div class="pricing-period">{{pricingInterval}}</div>
+    <ul class="pricing-includes">
+        @for (benefit of includedBenefits; track benefit) {
+            <li>{{benefit}}</li>
+        }
+    </ul>
+    <ul class="pricing-notes">
+        @for (note of importantNotes; track note) {
+            <li>{{note}}</li>
+        }
+    </ul>
+</div>
