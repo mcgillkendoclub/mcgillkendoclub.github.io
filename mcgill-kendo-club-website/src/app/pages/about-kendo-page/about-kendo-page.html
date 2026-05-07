@@ -6,8 +6,8 @@
   <section class="hero-section">
     <div class="hero-content">
       <span class="hero-kanji">剣道</span>
-      <h1>About Kendo</h1>
-      <p class="hero-subtitle">The Way of the Sword</p>
+      <h1>{{ 'ABOUT.HERO_TITLE' | translate }}</h1>
+      <p class="hero-subtitle">{{ 'ABOUT.HERO_SUBTITLE' | translate }}</p>
     </div>
   </section>
 
@@ -16,18 +16,10 @@
     <div class="section-inner">
       <div class="section-header">
         <span class="section-number">01</span>
-        <h2>What is Kendo?</h2>
+        <h2>{{ 'ABOUT.S01_TITLE' | translate }}</h2>
       </div>
-      <p>
-        Kendo (剣道) is a modern Japanese martial art that evolved from traditional samurai swordsmanship
-        (kenjutsu). The name means <em>The Way of the Sword</em> — a discipline that uses bamboo swords
-        (shinai) and protective armour (bogu) to practise techniques rooted in centuries of sword culture.
-      </p>
-      <p>
-        Unlike sport fencing, kendo is as much about forging character as it is about technical skill.
-        Practitioners, known as <em>kendoka</em>, train to cultivate focus, perseverance, courtesy,
-        and respect — values that carry well beyond the dojo.
-      </p>
+      <p [innerHTML]="'ABOUT.S01_P1' | translate"></p>
+      <p [innerHTML]="'ABOUT.S01_P2' | translate"></p>
     </div>
   </section>
 
@@ -36,28 +28,19 @@
     <div class="section-inner">
       <div class="section-header">
         <span class="section-number">02</span>
-        <h2>Philosophy of Kendo</h2>
+        <h2>{{ 'ABOUT.S02_TITLE' | translate }}</h2>
       </div>
-      <p>
-        The All Japan Kendo Federation defines the purpose of kendo as
-        <em>"disciplining the human character through the application of the principles of the katana."</em>
-        Central to this is the concept of <strong>Ken Zen Ichi Nyo</strong> (剣禅一如) — the unity of
-        sword and Zen — meaning that physical practice and mental refinement are inseparable.
-      </p>
-      <p>
-        Every aspect of training, from the bow before entering the dojo to the controlled aggression of a
-        strike, reflects core values:
-      </p>
+      <p [innerHTML]="'ABOUT.S02_P1' | translate"></p>
+      <p>{{ 'ABOUT.S02_P2' | translate }}</p>
       <ul class="philosophy-list">
-        <li><strong>Rei (礼)</strong> — Etiquette and respect for opponents, instructors, and the art itself.</li>
-        <li><strong>Ki (気)</strong> — Spirit and fighting intent, expressed through the kiai (shout).</li>
-        <li><strong>Ken (剣)</strong> — Correct technique and the proper use of the sword.</li>
-        <li><strong>Tai (体)</strong> — Posture, footwork, and body movement working in harmony.</li>
+        <li [innerHTML]="'ABOUT.S02_REI' | translate"></li>
+        <li [innerHTML]="'ABOUT.S02_KI' | translate"></li>
+        <li [innerHTML]="'ABOUT.S02_KEN' | translate"></li>
+        <li [innerHTML]="'ABOUT.S02_TAI' | translate"></li>
       </ul>
       <blockquote>
-        "The concept and purpose of Kendo is to discipline the human character through the application
-        of the principles of the katana."
-        <cite>— All Japan Kendo Federation</cite>
+        {{ 'ABOUT.S02_QUOTE' | translate }}
+        <cite>{{ 'ABOUT.S02_CITE' | translate }}</cite>
       </blockquote>
     </div>
   </section>
@@ -67,43 +50,33 @@
     <div class="section-inner">
       <div class="section-header">
         <span class="section-number">03</span>
-        <h2>Equipment</h2>
+        <h2>{{ 'ABOUT.S03_TITLE' | translate }}</h2>
       </div>
-      <p>
-        Kendo requires specialised gear. Beginners typically start with just a shinai and gradually add
-        armour as they advance. A full set of bogu is a significant investment but lasts many years with
-        proper care.
-      </p>
+      <p>{{ 'ABOUT.S03_INTRO' | translate }}</p>
       <div class="equipment-grid">
         <div class="equipment-card">
           <h3>Shinai <span class="jp">竹刀</span></h3>
-          <p>A sword made of four bamboo staves bound together, used for all sparring and drills.
-             Standard adult shinai are 120 cm (men) or 112 cm (women).</p>
+          <p>{{ 'ABOUT.S03_SHINAI_DESC' | translate }}</p>
         </div>
         <div class="equipment-card">
           <h3>Bokken <span class="jp">木刀</span></h3>
-          <p>A solid wooden sword used for kata (formal exercises). Bokken practice develops
-             correct form and an understanding of cutting mechanics.</p>
+          <p>{{ 'ABOUT.S03_BOKKEN_DESC' | translate }}</p>
         </div>
         <div class="equipment-card">
           <h3>Men <span class="jp">面</span></h3>
-          <p>The helmet that protects the head, face, and throat. It is the most recognisable
-             piece of kendo armour and one of the four valid target areas.</p>
+          <p>{{ 'ABOUT.S03_MEN_DESC' | translate }}</p>
         </div>
         <div class="equipment-card">
           <h3>Kote <span class="jp">小手</span></h3>
-          <p>Thick gauntlets that protect the wrists and forearms — another valid striking target.
-             They allow enough dexterity to grip and swing the shinai freely.</p>
+          <p>{{ 'ABOUT.S03_KOTE_DESC' | translate }}</p>
         </div>
         <div class="equipment-card">
           <h3>Do <span class="jp">胴</span></h3>
-          <p>A cuirass of lacquered bamboo or plastic that protects the torso and sides.
-             A strike to the right side of the do is a valid scoring target.</p>
+          <p>{{ 'ABOUT.S03_DO_DESC' | translate }}</p>
         </div>
         <div class="equipment-card">
           <h3>Gi &amp; Hakama <span class="jp">着物・袴</span></h3>
-          <p>The traditional uniform: a thick cotton jacket (gi) and wide pleated trousers
-             (hakama). The five pleats of the hakama represent kendo's core virtues.</p>
+          <p>{{ 'ABOUT.S03_GI_DESC' | translate }}</p>
         </div>
       </div>
     </div>
@@ -114,34 +87,25 @@
     <div class="section-inner">
       <div class="section-header">
         <span class="section-number">04</span>
-        <h2>Competitions</h2>
+        <h2>{{ 'ABOUT.S04_TITLE' | translate }}</h2>
       </div>
-      <p>
-        Kendo competitions (shiai) are held at club, regional, national, and international levels.
-        Matches are decided by a panel of referees who award points (ippon) for strikes that demonstrate
-        correct form, spirit, and follow-through simultaneously.
-      </p>
+      <p>{{ 'ABOUT.S04_INTRO' | translate }}</p>
       <div class="info-grid">
         <div class="info-card">
-          <h3>Individual Matches</h3>
-          <p>Most tournaments feature individual brackets. Matches are typically 3-5 minutes long.
-             The first competitor to score two ippons wins; a single ippon decides if time expires.</p>
+          <h3>{{ 'ABOUT.S04_INDIVIDUAL_TITLE' | translate }}</h3>
+          <p>{{ 'ABOUT.S04_INDIVIDUAL_DESC' | translate }}</p>
         </div>
         <div class="info-card">
-          <h3>Team Matches</h3>
-          <p>Teams of three or five compete in fixed order. The team with more individual wins advances;
-             total ippons are used as a tiebreaker. University team events are a highlight of the calendar.</p>
+          <h3>{{ 'ABOUT.S04_TEAM_TITLE' | translate }}</h3>
+          <p>{{ 'ABOUT.S04_TEAM_DESC' | translate }}</p>
         </div>
         <div class="info-card">
-          <h3>Scoring Targets</h3>
-          <p>Valid targets are <em>men</em> (head), <em>kote</em> (right wrist), <em>do</em> (right torso),
-             and <em>tsuki</em> (throat thrust — advanced ranks only). Each must be accompanied by a
-             kiai and correct zanshin (remaining posture).</p>
+          <h3>{{ 'ABOUT.S04_SCORING_TITLE' | translate }}</h3>
+          <p [innerHTML]="'ABOUT.S04_SCORING_DESC' | translate"></p>
         </div>
         <div class="info-card">
-          <h3>Local &amp; National Events</h3>
-          <p>McGill Kendo Club participates in inter-university tournaments across Quebec and Canada,
-             including events sanctioned by the Canadian Kendo Federation (CKF).</p>
+          <h3>{{ 'ABOUT.S04_LOCAL_TITLE' | translate }}</h3>
+          <p>{{ 'ABOUT.S04_LOCAL_DESC' | translate }}</p>
         </div>
       </div>
     </div>
@@ -152,45 +116,39 @@
     <div class="section-inner">
       <div class="section-header">
         <span class="section-number">05</span>
-        <h2>Gradings &amp; Progression</h2>
+        <h2>{{ 'ABOUT.S05_TITLE' | translate }}</h2>
       </div>
-      <p>
-        Kendo uses a two-tier ranking system of <em>kyu</em> (student grades) and <em>dan</em> (black-belt
-        grades). Grading examinations test technique, etiquette, and knowledge of kendo principles.
-        Progress is steady — a typical path from beginner to first dan takes two to three years of
-        consistent training.
-      </p>
+      <p [innerHTML]="'ABOUT.S05_INTRO' | translate"></p>
       <div class="rank-table">
         <div class="rank-row rank-header">
-          <span>Rank</span>
-          <span>Level</span>
-          <span>Notes</span>
+          <span>{{ 'ABOUT.S05_RANK_COL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_LEVEL_COL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_NOTES_COL' | translate }}</span>
         </div>
         <div class="rank-row">
           <span class="rank-badge kyu">6-1 Kyu</span>
-          <span>Beginner</span>
-          <span>Foundational strikes, footwork, and basic etiquette. No bogu required for early kyu grades.</span>
+          <span>{{ 'ABOUT.S05_KYU_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_KYU_NOTES' | translate }}</span>
         </div>
         <div class="rank-row">
           <span class="rank-badge shodan">1 Dan (Shodan)</span>
-          <span>Intermediate</span>
-          <span>First black-belt grade. Requires consistent technique and demonstrated spirit in shiai.</span>
+          <span>{{ 'ABOUT.S05_SHODAN_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_SHODAN_NOTES' | translate }}</span>
         </div>
         <div class="rank-row">
           <span class="rank-badge dan">2-4 Dan</span>
-          <span>Advanced</span>
-          <span>Deepening refinement of technique, kata proficiency, and understanding of kendo principles.</span>
+          <span>{{ 'ABOUT.S05_24DAN_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_24DAN_NOTES' | translate }}</span>
         </div>
         <div class="rank-row">
           <span class="rank-badge dan">5-8 Dan</span>
-          <span>Expert</span>
-          <span>Reserved for experienced practitioners. 8 Dan is the highest rank — fewer than 200 people
-            hold it worldwide.</span>
+          <span>{{ 'ABOUT.S05_58DAN_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_58DAN_NOTES' | translate }}</span>
         </div>
         <div class="rank-row">
           <span class="rank-badge hanshi">Renshi / Kyoshi / Hanshi</span>
-          <span>Teaching Titles</span>
-          <span>Honorary titles awarded alongside high dan grades, recognising outstanding teaching and contribution to kendo.</span>
+          <span>{{ 'ABOUT.S05_HANSHI_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_HANSHI_NOTES' | translate }}</span>
         </div>
       </div>
     </div>

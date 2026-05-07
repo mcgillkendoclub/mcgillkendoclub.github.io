@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { GeneralHeader } from "@app/components/general-header/general-header";
 import { GeneralFooter } from "@app/components/general-footer/general-footer";
 import { PricingCard } from "@app/components/pricing-card/pricing-card";
@@ -7,7 +8,7 @@ import { PricingCardInfo } from '@app/interfaces/pricing-card-info';
 
 @Component({
   selector: 'app-signup-page',
-  imports: [GeneralHeader, GeneralFooter, PricingCard],
+  imports: [GeneralHeader, GeneralFooter, PricingCard, TranslatePipe],
   templateUrl: './signup-page.html',
   styleUrl: './signup-page.scss',
 })

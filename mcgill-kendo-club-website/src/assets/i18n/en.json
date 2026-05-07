@@ -1,0 +1,92 @@
+{
+  "NAV": {
+    "TITLE": "McGill Kendo Club",
+    "SUBTITLE": "Official McGill University Kendo Club",
+    "HOME": "Home",
+    "KENDO": "Kendo",
+    "WHAT_IS_KENDO": "What is Kendo?",
+    "CLASSES": "Classes & Practices",
+    "INSTRUCTORS": "Instructors",
+    "ANNOUNCEMENTS_RESULTS": "Announcements & Results",
+    "ANNOUNCEMENTS": "Announcements",
+    "TOURNAMENT_RESULTS": "Tournament Results",
+    "GALLERY": "Gallery",
+    "SIGN_UP": "Sign Up"
+  },
+  "FOOTER": {
+    "CLUB_NAME": "McGill Kendo Club",
+    "COPYRIGHT": "© {{year}} McGill Kendo Club. All rights reserved.",
+    "CONTACT": "Contact",
+    "FOLLOW_US": "Follow Us"
+  },
+  "HOME": {
+    "SIGN_UP_BTN": "Sign Up Now! 🙏"
+  },
+  "GALLERY": {
+    "HERO_TITLE": "Gallery",
+    "HERO_SUBTITLE": "Photos from practices, tournaments, and club events",
+    "EMPTY": "No photos yet — check back soon."
+  },
+  "INSTRUCTORS": {
+    "HERO_TITLE": "Meet Our Instructors",
+    "HERO_SUBTITLE": "A roster of certified dan-ranked sensei"
+  },
+  "ANNOUNCEMENTS": {
+    "HERO_TITLE": "Announcements & Results",
+    "HERO_SUBTITLE": "Club news, tournament results, and upcoming events"
+  },
+  "SIGNUP": {
+    "HERO_TITLE": "Join McGill Kendo Club",
+    "HERO_SUBTITLE": "Fill out the form below to register for the upcoming semester.",
+    "LOADING": "Loading…"
+  },
+  "ABOUT": {
+    "HERO_TITLE": "About Kendo",
+    "HERO_SUBTITLE": "The Way of the Sword",
+    "S01_TITLE": "What is Kendo?",
+    "S01_P1": "Kendo (剣道) is a modern Japanese martial art that evolved from traditional samurai swordsmanship (kenjutsu). The name means <em>The Way of the Sword</em> — a discipline that uses bamboo swords (shinai) and protective armour (bogu) to practise techniques rooted in centuries of sword culture.",
+    "S01_P2": "Unlike sport fencing, kendo is as much about forging character as it is about technical skill. Practitioners, known as <em>kendoka</em>, train to cultivate focus, perseverance, courtesy, and respect — values that carry well beyond the dojo.",
+    "S02_TITLE": "Philosophy of Kendo",
+    "S02_P1": "The All Japan Kendo Federation defines the purpose of kendo as <em>\"disciplining the human character through the application of the principles of the katana.\"</em> Central to this is the concept of <strong>Ken Zen Ichi Nyo</strong> (剣禅一如) — the unity of sword and Zen — meaning that physical practice and mental refinement are inseparable.",
+    "S02_P2": "Every aspect of training, from the bow before entering the dojo to the controlled aggression of a strike, reflects core values:",
+    "S02_REI": "<strong>Rei (礼)</strong> — Etiquette and respect for opponents, instructors, and the art itself.",
+    "S02_KI": "<strong>Ki (気)</strong> — Spirit and fighting intent, expressed through the kiai (shout).",
+    "S02_KEN": "<strong>Ken (剣)</strong> — Correct technique and the proper use of the sword.",
+    "S02_TAI": "<strong>Tai (体)</strong> — Posture, footwork, and body movement working in harmony.",
+    "S02_QUOTE": "\"The concept and purpose of Kendo is to discipline the human character through the application of the principles of the katana.\"",
+    "S02_CITE": "— All Japan Kendo Federation",
+    "S03_TITLE": "Equipment",
+    "S03_INTRO": "Kendo requires specialised gear. Beginners typically start with just a shinai and gradually add armour as they advance. A full set of bogu is a significant investment but lasts many years with proper care.",
+    "S03_SHINAI_DESC": "A sword made of four bamboo staves bound together, used for all sparring and drills. Standard adult shinai are 120 cm (men) or 112 cm (women).",
+    "S03_BOKKEN_DESC": "A solid wooden sword used for kata (formal exercises). Bokken practice develops correct form and an understanding of cutting mechanics.",
+    "S03_MEN_DESC": "The helmet that protects the head, face, and throat. It is the most recognisable piece of kendo armour and one of the four valid target areas.",
+    "S03_KOTE_DESC": "Thick gauntlets that protect the wrists and forearms — another valid striking target. They allow enough dexterity to grip and swing the shinai freely.",
+    "S03_DO_DESC": "A cuirass of lacquered bamboo or plastic that protects the torso and sides. A strike to the right side of the do is a valid scoring target.",
+    "S03_GI_DESC": "The traditional uniform: a thick cotton jacket (gi) and wide pleated trousers (hakama). The five pleats of the hakama represent kendo's core virtues.",
+    "S04_TITLE": "Competitions",
+    "S04_INTRO": "Kendo competitions (shiai) are held at club, regional, national, and international levels. Matches are decided by a panel of referees who award points (ippon) for strikes that demonstrate correct form, spirit, and follow-through simultaneously.",
+    "S04_INDIVIDUAL_TITLE": "Individual Matches",
+    "S04_INDIVIDUAL_DESC": "Most tournaments feature individual brackets. Matches are typically 3–5 minutes long. The first competitor to score two ippons wins; a single ippon decides if time expires.",
+    "S04_TEAM_TITLE": "Team Matches",
+    "S04_TEAM_DESC": "Teams of three or five compete in fixed order. The team with more individual wins advances; total ippons are used as a tiebreaker. University team events are a highlight of the calendar.",
+    "S04_SCORING_TITLE": "Scoring Targets",
+    "S04_SCORING_DESC": "Valid targets are <em>men</em> (head), <em>kote</em> (right wrist), <em>do</em> (right torso), and <em>tsuki</em> (throat thrust — advanced ranks only). Each must be accompanied by a kiai and correct zanshin (remaining posture).",
+    "S04_LOCAL_TITLE": "Local & National Events",
+    "S04_LOCAL_DESC": "McGill Kendo Club participates in inter-university tournaments across Quebec and Canada, including events sanctioned by the Canadian Kendo Federation (CKF).",
+    "S05_TITLE": "Gradings & Progression",
+    "S05_INTRO": "Kendo uses a two-tier ranking system of <em>kyu</em> (student grades) and <em>dan</em> (black-belt grades). Grading examinations test technique, etiquette, and knowledge of kendo principles. Progress is steady — a typical path from beginner to first dan takes two to three years of consistent training.",
+    "S05_RANK_COL": "Rank",
+    "S05_LEVEL_COL": "Level",
+    "S05_NOTES_COL": "Notes",
+    "S05_KYU_LEVEL": "Beginner",
+    "S05_KYU_NOTES": "Foundational strikes, footwork, and basic etiquette. No bogu required for early kyu grades.",
+    "S05_SHODAN_LEVEL": "Intermediate",
+    "S05_SHODAN_NOTES": "First black-belt grade. Requires consistent technique and demonstrated spirit in shiai.",
+    "S05_24DAN_LEVEL": "Advanced",
+    "S05_24DAN_NOTES": "Deepening refinement of technique, kata proficiency, and understanding of kendo principles.",
+    "S05_58DAN_LEVEL": "Expert",
+    "S05_58DAN_NOTES": "Reserved for experienced practitioners. 8 Dan is the highest rank — fewer than 200 people hold it worldwide.",
+    "S05_HANSHI_LEVEL": "Teaching Titles",
+    "S05_HANSHI_NOTES": "Honorary titles awarded alongside high dan grades, recognising outstanding teaching and contribution to kendo."
+  }
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import { GeneralHeader } from "@app/components/general-header/general-header";
 import { GeneralFooter } from "@app/components/general-footer/general-footer";
 import data from "@assets/instructors.json";
@@ -7,7 +8,7 @@ import { InstructorProfileCard } from '@app/components/instructor-profile-card/i
 
 @Component({
   selector: 'app-instructors-page',
-  imports: [GeneralHeader, GeneralFooter, InstructorProfileCard],
+  imports: [GeneralHeader, GeneralFooter, InstructorProfileCard, TranslatePipe],
   templateUrl: './instructors-page.html',
   styleUrl: './instructors-page.scss',
 })
