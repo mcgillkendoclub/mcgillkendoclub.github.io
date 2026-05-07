@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './pricing-card.scss',
 })
 export class PricingCard {
-  @Input() price!: number;
+  @Input() price!: string;
   @Input() semester!: string;
   @Input() pricingInterval!: string;
   @Input() includedBenefits!: string[];

@@ -1,1 +1,25 @@
-<p>gallery-container works!</p>
+@if (photos.length === 0) {
+  <p class="gallery-empty">No photos yet — check back soon.</p>
+} @else {
+  <div class="gallery-grid">
+    @for (photo of interleavedPhotos; track photo.filename; let i = $index) {
+      <div class="gallery-tile" (click)="open(photos.indexOf(photo))">
+        <img [src]="photoSrc(photo.filename)" [alt]="photo.alt" loading="lazy" />
+      </div>
+    }
+  </div>
+}
+
+@if (activeIndex !== null) {
+  <div class="lightbox-overlay" (click)="close()">
+    <button class="lightbox-close" (click)="close()">&#x2715;</button>
+
+    <button class="lightbox-nav lightbox-prev" (click)="$event.stopPropagation(); prev()">&#x2039;</button>
+
+    <div class="lightbox-img-wrap" (click)="$event.stopPropagation()">
+      <img [src]="photoSrc(photos[activeIndex].filename)" [alt]="photos[activeIndex].alt" />
+    </div>
+
+    <button class="lightbox-nav lightbox-next" (click)="$event.stopPropagation(); next()">&#x203a;</button>
+  </div>
+}

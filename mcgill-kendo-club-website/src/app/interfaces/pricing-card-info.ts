@@ -1,5 +1,5 @@
 export interface PricingCardInfo {
-    price: number;
+    price: string;
     semester: string;
     pricingInterval: string;
     includedBenefits: string[];
