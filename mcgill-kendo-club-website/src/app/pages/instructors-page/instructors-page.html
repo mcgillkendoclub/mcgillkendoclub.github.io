@@ -1,6 +1,11 @@
 <app-general-header></app-general-header>
+
+<section class="instructors-hero">
+  <h1>Meet Our Instructors</h1>
+  <p class="instructors-subtitle">A roster of certified dan-ranked sensei</p>
+</section>
+
 <div class="instructors-page">
-    <h2>Meet Our Instructors</h2>
     <div class="instructor-list">
         @for (instructor of instructors; track instructor.name) {
             <app-instructor-profile-card [instructor]="instructor"></app-instructor-profile-card>
