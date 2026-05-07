@@ -2,9 +2,13 @@
   <p class="gallery-empty">No photos yet — check back soon.</p>
 } @else {
   <div class="gallery-grid">
-    @for (photo of interleavedPhotos; track photo.filename; let i = $index) {
-      <div class="gallery-tile" (click)="open(photos.indexOf(photo))">
-        <img [src]="photoSrc(photo.filename)" [alt]="photo.alt" loading="lazy" />
+    @for (col of columns; track $index) {
+      <div class="gallery-col">
+        @for (photo of col; track photo.filename) {
+          <div class="gallery-tile" (click)="open(photos.indexOf(photo))">
+            <img [src]="photoSrc(photo.filename)" [alt]="photo.alt" loading="lazy" />
+          </div>
+        }
       </div>
     }
   </div>

@@ -16,16 +16,16 @@ export class GalleryContainer implements OnInit {
   constructor(private http: HttpClient) {}
 
   readonly columnCount = 3;
-  interleavedPhotos: GalleryPhoto[] = [];
+  columns: GalleryPhoto[][] = [];
 
   ngOnInit() {
-    this.sortPhotos();
+    this.sortPhotosByDate();
   }
-  sortPhotos(){
+
+  private sortPhotosByDate() {
     this.photos = [...data].sort((a, b) => b.date.localeCompare(a.date));
-    const cols: GalleryPhoto[][] = Array.from({ length: this.columnCount }, () => []);
-    this.photos.forEach((photo, index) => cols[index % this.columnCount].push(photo));
-    this.interleavedPhotos = cols.flat();
+    this.columns = Array.from({ length: this.columnCount }, () => []);
+    this.photos.forEach((photo, i) => this.columns[i % this.columnCount].push(photo));
   }
 
   photoSrc(filename: string): string {
