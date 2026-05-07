@@ -40,6 +40,10 @@
     "HERO_SUBTITLE": "Remplissez le formulaire ci-dessous pour vous inscrire au prochain semestre.",
     "LOADING": "Chargement…"
   },
+  "CALENDAR": {
+    "HERO_TITLE": "Calendrier des Pratiques",
+    "HERO_SUBTITLE": "Séances à venir et événements du club"
+  },
   "ABOUT": {
     "HERO_TITLE": "À propos du Kendo",
     "HERO_SUBTITLE": "La Voie du Sabre",

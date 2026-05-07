@@ -5,6 +5,7 @@ import { SignupPage } from './pages/signup-page/signup-page';
 import { GalleryPage } from './pages/gallery-page/gallery-page';
 import { AboutKendoPage } from './pages/about-kendo-page/about-kendo-page';
 import { AnnouncementsPage } from './pages/announcements-page/announcements-page';
+import { CalendarPage } from './pages/calendar-page/calendar-page';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -14,5 +15,6 @@ export const routes: Routes = [
     { path: 'gallery', component: GalleryPage },
     { path: 'kendo', component: AboutKendoPage},
     { path: 'announcements', component: AnnouncementsPage },
+    { path: 'calendar', component: CalendarPage },
     { path: '**', redirectTo: '/home' }
 ];

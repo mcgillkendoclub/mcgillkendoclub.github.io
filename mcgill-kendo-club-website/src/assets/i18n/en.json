@@ -40,6 +40,10 @@
     "HERO_SUBTITLE": "Fill out the form below to register for the upcoming semester.",
     "LOADING": "Loading…"
   },
+  "CALENDAR": {
+    "HERO_TITLE": "Practice Schedule",
+    "HERO_SUBTITLE": "Upcoming sessions & club events"
+  },
   "ABOUT": {
     "HERO_TITLE": "About Kendo",
     "HERO_SUBTITLE": "The Way of the Sword",
