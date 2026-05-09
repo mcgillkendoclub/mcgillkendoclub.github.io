@@ -105,3 +105,11 @@
   &.lightbox-prev { left: 1rem; }
   &.lightbox-next { right: 1rem; }
 }
+
+.lightbox-date {
+  margin: 0.6rem 0 0;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+}

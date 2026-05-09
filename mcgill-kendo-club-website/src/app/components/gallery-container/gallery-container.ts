@@ -51,6 +51,10 @@ export class GalleryContainer implements OnInit {
       this.activeIndex = (this.activeIndex + 1) % this.photos.length;
   }
 
+  formatDate(dateStr: string): string {
+    return new Date(dateStr).toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
+  }
+
   @HostListener('document:keydown', ['$event'])
   onKey(e: KeyboardEvent) {
     if (this.activeIndex === null) return;
