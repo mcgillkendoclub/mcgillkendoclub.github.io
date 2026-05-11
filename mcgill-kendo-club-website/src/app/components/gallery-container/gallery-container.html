@@ -32,5 +32,17 @@
     </div>
 
     <button class="lightbox-nav lightbox-next" (click)="$event.stopPropagation(); next()">&#x203a;</button>
+
+    <div class="lightbox-filmstrip" (click)="$event.stopPropagation()">
+      @for (photo of photos; track photo.filename; let i = $index) {
+        <img
+          class="filmstrip-thumb"
+          [class.thumb-active]="i === activeIndex"
+          [src]="photoSrc(photo.filename)"
+          [alt]="photo.alt"
+          (click)="activeIndex = i"
+        />
+      }
+    </div>
   </div>
 }

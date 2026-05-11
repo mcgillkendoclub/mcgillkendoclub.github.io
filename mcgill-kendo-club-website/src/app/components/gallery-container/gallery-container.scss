@@ -59,6 +59,7 @@
   position: fixed;
   inset: 0;
   background: rgba(0, 0, 0, 0.92);
+  padding-bottom: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,6 +115,41 @@
   &:hover { background: rgba(255, 255, 255, 0.2); }
   &.lightbox-prev { left: 1rem; }
   &.lightbox-next { right: 1rem; }
+}
+
+.lightbox-filmstrip {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.6rem 1rem;
+  overflow-x: auto;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+
+  &::-webkit-scrollbar { height: 4px; }
+  &::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.3); border-radius: 2px; }
+}
+
+.filmstrip-thumb {
+  height: 60px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 2px;
+  cursor: pointer;
+  opacity: 0.5;
+  border: 2px solid transparent;
+  transition: opacity 0.2s, border-color 0.2s;
+  flex-shrink: 0;
+
+  &:hover { opacity: 0.85; }
+
+  &.thumb-active {
+    opacity: 1;
+    border-color: #fff;
+  }
 }
 
 .lightbox-date {
