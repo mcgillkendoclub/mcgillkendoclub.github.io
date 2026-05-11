@@ -1,0 +1,34 @@
+<article class="tournament-post">
+  <div class="tournament-post-header">
+    <h2 class="tournament-name">{{ tournament.tournamentName }}</h2>
+    <div class="tournament-meta">
+      <span>{{ tournament.date | date:'MMMM d, y' }}</span>
+      <span class="meta-sep">·</span>
+      <span>{{ tournament.location }}</span>
+    </div>
+  </div>
+
+  @for (categoryResult of tournament.results; track categoryResult.category) {
+    <div class="category-section">
+      <h3 class="category-title">{{ categoryResult.category }}</h3>
+      @if (categoryResult.competitors.length > 0) {
+        <table class="results-table">
+          <thead>
+            <tr>
+              <th>{{ 'TOURNAMENT_RESULTS.COL_COMPETITOR' | translate }}</th>
+              <th>{{ 'TOURNAMENT_RESULTS.COL_RESULT' | translate }}</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (entry of categoryResult.competitors; track entry.competitorName) {
+              <tr>
+                <td>{{ entry.competitorName }}</td>
+                <td>{{ medal(entry.result) }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      }
+    </div>
+  }
+</article>

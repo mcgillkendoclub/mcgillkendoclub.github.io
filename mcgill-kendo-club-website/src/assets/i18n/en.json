@@ -53,6 +53,13 @@
     "HERO_SUBTITLE": "Fill out the form below to register for the upcoming semester.",
     "LOADING": "Loading…"
   },
+  "TOURNAMENT_RESULTS": {
+    "HERO_TITLE": "Tournament Results",
+    "HERO_SUBTITLE": "Competition results and standings from recent tournaments",
+    "EMPTY": "No results yet — check back soon.",
+    "COL_COMPETITOR": "Competitor",
+    "COL_RESULT": "Result"
+  },
   "CALENDAR": {
     "HERO_TITLE": "Practice Schedule",
     "HERO_SUBTITLE": "Upcoming sessions & club events"

@@ -1,2 +1,18 @@
 <app-general-header></app-general-header>
+
+<section class="tournament-hero">
+  <h1>{{ 'TOURNAMENT_RESULTS.HERO_TITLE' | translate }}</h1>
+  <p class="tournament-subtitle">{{ 'TOURNAMENT_RESULTS.HERO_SUBTITLE' | translate }}</p>
+</section>
+
+<div class="tournament-body">
+  <div class="tournament-list">
+    @for (tournament of tournaments; track tournament.tournamentName) {
+      <app-tournament-post [tournament]="tournament" />
+    } @empty {
+      <p class="tournament-empty">{{ 'TOURNAMENT_RESULTS.EMPTY' | translate }}</p>
+    }
+  </div>
+</div>
+
 <app-general-footer></app-general-footer>

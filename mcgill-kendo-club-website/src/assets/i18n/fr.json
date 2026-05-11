@@ -53,6 +53,13 @@
     "HERO_SUBTITLE": "Remplissez le formulaire ci-dessous pour vous inscrire au prochain semestre.",
     "LOADING": "Chargement…"
   },
+  "TOURNAMENT_RESULTS": {
+    "HERO_TITLE": "Résultats de Tournoi",
+    "HERO_SUBTITLE": "Résultats et classements des tournois récents",
+    "EMPTY": "Pas encore de résultats — revenez bientôt.",
+    "COL_COMPETITOR": "Participant",
+    "COL_RESULT": "Résultat"
+  },
   "CALENDAR": {
     "HERO_TITLE": "Calendrier des Pratiques",
     "HERO_SUBTITLE": "Séances à venir et événements du club"

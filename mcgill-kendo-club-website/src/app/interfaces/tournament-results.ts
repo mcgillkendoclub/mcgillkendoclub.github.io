@@ -2,11 +2,14 @@ export interface TournamentResult {
     tournamentName: string;
     date: string;
     location: string;
-    results: CompetitorResult[];
+    results: CategoryResult[];
 }
 
+export interface CategoryResult {
+    category: string;
+    competitors: CompetitorResult[];
+}
 export interface CompetitorResult {
     competitorName: string;
-    category: string;
-    result: string;
+    result: number | string;
 }
