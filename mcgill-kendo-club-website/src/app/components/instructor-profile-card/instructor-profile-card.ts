@@ -10,4 +10,5 @@ import { Instructor } from '@app/interfaces/instructor';
 })
 export class InstructorProfileCard {
   @Input() instructor!: Instructor;
+  imageError = false;
 }

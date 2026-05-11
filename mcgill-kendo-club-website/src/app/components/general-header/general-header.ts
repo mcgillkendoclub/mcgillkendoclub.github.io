@@ -9,6 +9,9 @@ import { TranslatePipe, TranslateService } from '@ngx-translate/core';
   styleUrl: './general-header.scss',
 })
 export class GeneralHeader {
+  menuOpen = false;
+  activeDropdown: string | null = null;
+
   constructor(private translate: TranslateService) {}
 
   get currentLang() { return this.translate.getCurrentLang() || 'en'; }
@@ -16,5 +19,18 @@ export class GeneralHeader {
   setLang(lang: string) {
     this.translate.use(lang);
     localStorage.setItem('lang', lang);
+  }
+
+  toggleMenu() { this.menuOpen = !this.menuOpen; }
+
+  closeMenu() {
+    this.menuOpen = false;
+    this.activeDropdown = null;
+  }
+
+  toggleDropdown(name: string, event: Event) {
+    event.preventDefault();
+    event.stopPropagation();
+    this.activeDropdown = this.activeDropdown === name ? null : name;
   }
 }

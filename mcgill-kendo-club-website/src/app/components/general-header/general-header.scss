@@ -4,152 +4,280 @@ $text-muted: #555;
 $nav-hover-bg: $mcgill-red;
 $dropdown-border: #e0e0e0;
 $dropdown-hover-bg: #f5f5f5;
+$mobile-breakpoint: 768px;
+
+// ── Desktop layout ────────────────────────────────────────────────────────────
 
 .site-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.5rem 2rem 0;
-    background-color: #ffffff;
-    border-bottom: 3px solid $mcgill-red;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem 2rem 0;
+  background-color: #ffffff;
+  border-bottom: 3px solid $mcgill-red;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 1.25rem;
 }
 
 .home-title {
-    text-align: center;
-    margin-bottom: 1.25rem;
+  text-align: center;
 
-    .title-link {
-        text-decoration: none;
-        color: inherit;
+  .title-link {
+    text-decoration: none;
+    color: inherit;
 
-        &:hover h1 {
-            color: darken($mcgill-red, 10%);
-        }
-    }
+    &:hover h1 { color: darken($mcgill-red, 10%); }
+  }
 
-    h1 {
-        margin: 0 0 0.25rem;
-        font-size: 4.5rem;
-        color: black;
-        transition: color 0.2s;
-    }
+  h1 {
+    margin: 0 0 0.25rem;
+    font-size: 4.5rem;
+    color: black;
+    transition: color 0.2s;
+  }
 
-    p {
-        margin: 0;
-        font-size: 1rem;
-        color: $text-muted;
-    }
+  p {
+    margin: 0;
+    font-size: 1rem;
+    color: $text-muted;
+  }
 }
 
+.hamburger { display: none; }
+
 .main-nav {
-    font-family: sans-serif;
+  font-family: sans-serif;
+
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    position: relative;
+
+    > a {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.7rem 1.1rem;
+      color: $text-dark;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      white-space: nowrap;
+      transition: background-color 0.2s, color 0.2s;
+
+      &:hover,
+      &.active {
+        background-color: $nav-hover-bg;
+        color: #ffffff;
+
+        .dropdown-arrow { color: #ffffff; }
+      }
+    }
+
+    &.has-dropdown:hover .dropdown { display: block; }
+  }
+
+  .dropdown-toggle { display: none; }
+
+  .dropdown-arrow {
+    font-size: 0.6rem;
+    color: $text-muted;
+    transition: color 0.2s;
+  }
+
+  .lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+    padding: 0.4rem 0.75rem;
+
+    button {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: $text-muted;
+      padding: 0.2rem 0.3rem;
+      border-radius: 2px;
+      transition: color 0.2s;
+
+      &:hover { color: $mcgill-red; }
+
+      &.active {
+        color: $mcgill-red;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+    }
+
+    .lang-sep {
+      color: $dropdown-border;
+      font-size: 0.85rem;
+      user-select: none;
+    }
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    min-width: 190px;
+    background-color: #ffffff;
+    border: 1px solid $dropdown-border;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    list-style: none;
+    padding: 0.25rem 0;
+    margin: 0;
+
+    li a {
+      display: block;
+      padding: 0.6rem 1.1rem;
+      color: $text-dark;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background-color 0.2s, color 0.2s;
+
+      &:hover {
+        background-color: $dropdown-hover-bg;
+        color: $mcgill-red;
+      }
+    }
+  }
+}
+
+// ── Mobile ────────────────────────────────────────────────────────────────────
+
+@media (max-width: $mobile-breakpoint) {
+  .site-header {
+    padding: 1rem 1.25rem 0;
+    align-items: stretch;
+  }
+
+  .header-top {
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+
+  .home-title {
+    text-align: left;
+
+    h1 { font-size: 2rem; }
+    p { font-size: 0.8rem; }
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    flex-shrink: 0;
+
+    span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: $text-dark;
+      border-radius: 2px;
+      transition: transform 0.25s ease, opacity 0.25s ease;
+    }
+
+    &.open {
+      span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+      span:nth-child(2) { opacity: 0; }
+      span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+    }
+  }
+
+  .main-nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    width: 100%;
+
+    &.open { max-height: 100vh; }
 
     .nav-list {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
+      flex-direction: column;
+      border-top: 1px solid $dropdown-border;
+      padding-bottom: 0.5rem;
     }
 
     .nav-item {
-        position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      border-bottom: 1px solid #f0f0f0;
 
-        > a {
-            display: flex;
-            align-items: center;
-            gap: 0.3rem;
-            padding: 0.7rem 1.1rem;
-            color: $text-dark;
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            white-space: nowrap;
-            transition: background-color 0.2s, color 0.2s;
+      > a {
+        flex: 1;
+        white-space: normal;
+        padding: 0.9rem 1.25rem;
 
-            &:hover,
-            &.active {
-                background-color: $nav-hover-bg;
-                color: #ffffff;
-
-                .dropdown-arrow {
-                    color: #ffffff;
-                }
-            }
-        }
-
-        &.has-dropdown:hover .dropdown {
-            display: block;
-        }
+        .dropdown-arrow { display: none; }
+      }
     }
 
-    .dropdown-arrow {
-        font-size: 0.6rem;
-        color: $text-muted;
-        transition: color 0.2s;
+    .dropdown-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      background: none;
+      border: none;
+      border-left: 1px solid #f0f0f0;
+      cursor: pointer;
+      font-size: 0.55rem;
+      color: $text-muted;
+      transition: transform 0.25s ease;
+    }
+
+    .has-dropdown {
+      &:hover .dropdown { display: none; }
+
+      &.dropdown-open {
+        .dropdown-toggle { transform: rotate(180deg); }
+
+        .dropdown {
+          display: block;
+          position: static;
+          flex: 0 0 100%;
+          box-shadow: none;
+          border: none;
+          border-top: 1px solid #f0f0f0;
+          background: #fafafa;
+          padding: 0.25rem 0;
+          min-width: unset;
+
+          li a { padding-left: 2rem; }
+        }
+      }
     }
 
     .lang-toggle {
-        display: flex;
-        align-items: center;
-        gap: 0.1rem;
-        padding: 0.4rem 0.75rem;
-
-        button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            font-size: 0.8rem;
-            font-weight: 600;
-            letter-spacing: 0.05em;
-            color: $text-muted;
-            padding: 0.2rem 0.3rem;
-            border-radius: 2px;
-            transition: color 0.2s;
-
-            &:hover { color: $mcgill-red; }
-
-            &.active {
-                color: $mcgill-red;
-                text-decoration: underline;
-                text-underline-offset: 3px;
-            }
-        }
-
-        .lang-sep {
-            color: $dropdown-border;
-            font-size: 0.85rem;
-            user-select: none;
-        }
+      justify-content: center;
+      border-bottom: none;
+      padding: 0.75rem 1.25rem;
     }
-
-    .dropdown {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        min-width: 190px;
-        background-color: #ffffff;
-        border: 1px solid $dropdown-border;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        z-index: 100;
-        list-style: none;
-        padding: 0.25rem 0;
-        margin: 0;
-
-        li a {
-            display: block;
-            padding: 0.6rem 1.1rem;
-            color: $text-dark;
-            text-decoration: none;
-            font-size: 0.9rem;
-            transition: background-color 0.2s, color 0.2s;
-
-            &:hover {
-                background-color: $dropdown-hover-bg;
-                color: $mcgill-red;
-            }
-        }
-    }
+  }
 }

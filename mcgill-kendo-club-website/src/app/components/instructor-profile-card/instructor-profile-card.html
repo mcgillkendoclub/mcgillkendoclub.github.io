@@ -1,7 +1,16 @@
 <div class="instructor-card">
-    <img [src]="instructor.photoUrl" alt="{{instructor.name}}" class="instructor-photo">
-    <h3>{{instructor.name}}</h3>
-    <p>{{instructor.rank}}</p>
-    <p>"{{instructor.quote}}"</p>
-    <p>- {{instructor.name}}</p>
+  @if (imageError || !instructor.photoUrl) {
+    <div class="instructor-photo instructor-photo-placeholder">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 130" fill="#bbb">
+        <circle cx="50" cy="38" r="24"/>
+        <path d="M5 130 C5 82 22 70 50 70 C78 70 95 82 95 130Z"/>
+      </svg>
+    </div>
+  } @else {
+    <img [src]="instructor.photoUrl" [alt]="instructor.name" class="instructor-photo" (error)="imageError = true">
+  }
+  <h3>{{instructor.name}}</h3>
+  <p>{{instructor.rank}}</p>
+  <p>"{{instructor.quote}}"</p>
+  <p>- {{instructor.name}}</p>
 </div>

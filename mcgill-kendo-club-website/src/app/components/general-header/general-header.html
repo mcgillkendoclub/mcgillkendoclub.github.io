@@ -1,49 +1,63 @@
 <div class="site-header">
+  <div class="header-top">
     <div class="home-title">
-        <a routerLink="/home" class="title-link">
-            <h1>{{ 'NAV.TITLE' | translate }}</h1>
-            <p>{{ 'NAV.SUBTITLE' | translate }}</p>
-        </a>
+      <a routerLink="/home" class="title-link" (click)="closeMenu()">
+        <h1>{{ 'NAV.TITLE' | translate }}</h1>
+        <p>{{ 'NAV.SUBTITLE' | translate }}</p>
+      </a>
     </div>
-    <nav class="main-nav">
-        <ul class="nav-list">
-            <li class="nav-item">
-                <a routerLink="/home" routerLinkActive="active">{{ 'NAV.HOME' | translate }}</a>
-            </li>
+    <button class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 
-            <li class="nav-item has-dropdown">
-                <a routerLink="/kendo" routerLinkActive="active">{{ 'NAV.KENDO' | translate }} <span class="dropdown-arrow">&#9660;</span></a>
-                <ul class="dropdown">
-                    <li><a routerLink="/kendo" routerLinkActive="active">{{ 'NAV.WHAT_IS_KENDO' | translate }}</a></li>
-                    <li><a routerLink="/calendar" routerLinkActive="active">{{ 'NAV.CLASSES' | translate }}</a></li>
-                </ul>
-            </li>
+  <nav class="main-nav" [class.open]="menuOpen">
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a routerLink="/home" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.HOME' | translate }}</a>
+      </li>
 
-            <li class="nav-item">
-                <a routerLink="/instructors" routerLinkActive="active">{{ 'NAV.INSTRUCTORS' | translate }}</a>
-            </li>
-
-            <li class="nav-item has-dropdown">
-                <a routerLink="/announcements" routerLinkActive="active">{{ 'NAV.ANNOUNCEMENTS_RESULTS' | translate }} <span class="dropdown-arrow">&#9660;</span></a>
-                <ul class="dropdown">
-                    <li><a routerLink="/announcements" routerLinkActive="active">{{ 'NAV.ANNOUNCEMENTS' | translate }}</a></li>
-                    <li><a routerLink="/results" routerLinkActive="active">{{ 'NAV.TOURNAMENT_RESULTS' | translate }}</a></li>
-                </ul>
-            </li>
-
-            <li class="nav-item">
-                <a routerLink="/gallery" routerLinkActive="active">{{ 'NAV.GALLERY' | translate }}</a>
-            </li>
-
-            <li class="nav-item">
-                <a routerLink="/signup" routerLinkActive="active">{{ 'NAV.SIGN_UP' | translate }}</a>
-            </li>
-
-            <li class="nav-item lang-toggle">
-                <button (click)="setLang('en')" [class.active]="currentLang === 'en'">EN</button>
-                <span class="lang-sep">|</span>
-                <button (click)="setLang('fr')" [class.active]="currentLang === 'fr'">FR</button>
-            </li>
+      <li class="nav-item has-dropdown" [class.dropdown-open]="activeDropdown === 'kendo'">
+        <a routerLink="/kendo" routerLinkActive="active" (click)="closeMenu()">
+          {{ 'NAV.KENDO' | translate }}
+          <span class="dropdown-arrow">&#9660;</span>
+        </a>
+        <button class="dropdown-toggle" (click)="toggleDropdown('kendo', $event)" aria-label="Toggle submenu">&#9660;</button>
+        <ul class="dropdown">
+          <li><a routerLink="/kendo" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.WHAT_IS_KENDO' | translate }}</a></li>
+          <li><a routerLink="/calendar" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.CLASSES' | translate }}</a></li>
         </ul>
-    </nav>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/instructors" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.INSTRUCTORS' | translate }}</a>
+      </li>
+
+      <li class="nav-item has-dropdown" [class.dropdown-open]="activeDropdown === 'announcements'">
+        <a routerLink="/announcements" routerLinkActive="active" (click)="closeMenu()">
+          {{ 'NAV.ANNOUNCEMENTS_RESULTS' | translate }}
+          <span class="dropdown-arrow">&#9660;</span>
+        </a>
+        <button class="dropdown-toggle" (click)="toggleDropdown('announcements', $event)" aria-label="Toggle submenu">&#9660;</button>
+        <ul class="dropdown">
+          <li><a routerLink="/announcements" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.ANNOUNCEMENTS' | translate }}</a></li>
+          <li><a routerLink="/results" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.TOURNAMENT_RESULTS' | translate }}</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/gallery" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.GALLERY' | translate }}</a>
+      </li>
+
+      <li class="nav-item">
+        <a routerLink="/signup" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.SIGN_UP' | translate }}</a>
+      </li>
+
+      <li class="nav-item lang-toggle">
+        <button (click)="setLang('en')" [class.active]="currentLang === 'en'">EN</button>
+        <span class="lang-sep">|</span>
+        <button (click)="setLang('fr')" [class.active]="currentLang === 'fr'">FR</button>
+      </li>
+    </ul>
+  </nav>
 </div>
