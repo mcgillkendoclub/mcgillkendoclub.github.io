@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { TranslatePipe } from '@ngx-translate/core';
 import { GalleryPhoto } from '@app/interfaces/gallery-photo';
 import data from '@assets/gallery/photos.json';
@@ -14,7 +13,7 @@ export class GalleryContainer implements OnInit {
   photos: GalleryPhoto[] = [];
   activeIndex: number | null = null;
 
-  constructor(private http: HttpClient) {}
+  constructor() {}
 
   readonly columnCount = 3;
   columns: GalleryPhoto[][] = [];

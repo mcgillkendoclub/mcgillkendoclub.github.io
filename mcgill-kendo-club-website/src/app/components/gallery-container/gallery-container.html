@@ -7,6 +7,9 @@
         @for (photo of col; track photo.filename) {
           <div class="gallery-tile" (click)="open(photos.indexOf(photo))">
             <img [src]="photoSrc(photo.filename)" [alt]="photo.alt" loading="lazy" />
+            @if (photo.caption) {
+              <p class="tile-caption">{{ photo.caption }}</p>
+            }
           </div>
         }
       </div>
@@ -23,6 +26,9 @@
     <div class="lightbox-img-wrap" (click)="$event.stopPropagation()">
       <img [src]="photoSrc(photos[activeIndex].filename)" [alt]="photos[activeIndex].alt" />
       <p class="lightbox-date">{{ formatDate(photos[activeIndex].date) }}</p>
+      @if (photos[activeIndex].caption) {
+        <p class="lightbox-caption">{{ photos[activeIndex].caption }}</p>
+      }
     </div>
 
     <button class="lightbox-nav lightbox-next" (click)="$event.stopPropagation(); next()">&#x203a;</button>

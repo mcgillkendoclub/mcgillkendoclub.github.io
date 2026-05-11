@@ -6,6 +6,30 @@
         <button class="signup-btn" routerLink="/signup">{{ 'HOME.SIGN_UP_BTN' | translate }}</button>
     </div>
 
+    @if (slides.length > 0) {
+      <section class="slideshow-section" (mouseenter)="pauseSlideshow()" (mouseleave)="resumeSlideshow()">
+        <div class="slideshow">
+          @for (slide of slides; track slide.filename; let i = $index) {
+            <img
+              class="slide-img"
+              [class.slide-active]="i === slideIndex"
+              [src]="slideSrc(slide.filename)"
+              [alt]="slide.alt"
+            />
+          }
+          @if (slides.length > 1) {
+            <button class="slide-arrow slide-prev" (click)="prevSlide()">&#x2039;</button>
+            <button class="slide-arrow slide-next" (click)="nextSlide()">&#x203a;</button>
+            <div class="slide-dots">
+              @for (slide of slides; track slide.filename; let i = $index) {
+                <button class="slide-dot" [class.dot-active]="i === slideIndex" (click)="goToSlide(i)"></button>
+              }
+            </div>
+          }
+        </div>
+      </section>
+    }
+
     @if (latestAnnouncement) {
       <section class="announcement-section">
         <h2>{{ 'HOME.LATEST_ANNOUNCEMENT' | translate }}</h2>
