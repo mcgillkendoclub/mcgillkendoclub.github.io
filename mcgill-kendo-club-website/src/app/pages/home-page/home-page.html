@@ -5,6 +5,38 @@
     <div class="hero">
         <button class="signup-btn" routerLink="/signup">{{ 'HOME.SIGN_UP_BTN' | translate }}</button>
     </div>
+
+    @if (latestAnnouncement) {
+      <section class="announcement-section">
+        <h2>{{ 'HOME.LATEST_ANNOUNCEMENT' | translate }}</h2>
+        <app-announcement-blog-post [announcement]="latestAnnouncement" />
+        <a routerLink="/announcements" class="see-all-link">{{ 'HOME.SEE_ALL_ANNOUNCEMENTS' | translate }}</a>
+      </section>
+    }
+
+    <section class="practice-section">
+        <h2>{{ 'HOME.PRACTICE_TITLE' | translate }}</h2>
+        <p class="practice-location">
+            <span class="location-name">{{ 'HOME.PRACTICE_LOCATION' | translate }}</span>
+            <span class="location-sep">·</span>
+            <span class="location-address">{{ 'HOME.PRACTICE_ADDRESS' | translate }}</span>
+        </p>
+        <div class="practice-days">
+            <div class="practice-card">
+                <div class="day-label">{{ 'HOME.PRACTICE_TUE_THU' | translate }}</div>
+                <div class="day-time">{{ 'HOME.PRACTICE_TUE_THU_TIME' | translate }}</div>
+            </div>
+            <div class="practice-card">
+                <div class="day-label">{{ 'HOME.PRACTICE_SAT' | translate }}</div>
+                <div class="day-time">{{ 'HOME.PRACTICE_SAT_TIME' | translate }}</div>
+            </div>
+        </div>
+        <div class="practice-notes">
+            <p>{{ 'HOME.PRACTICE_BEGINNER_NOTE' | translate }}</p>
+            <p>{{ 'HOME.PRACTICE_ADVANCED_NOTE' | translate }}</p>
+        </div>
+        <a routerLink="/calendar" class="see-all-link">{{ 'HOME.SEE_FULL_SCHEDULE' | translate }}</a>
+    </section>
 </body>
 <footer>
     <app-general-footer></app-general-footer>

@@ -13,5 +13,5 @@ import data from '@assets/announcements.json';
   styleUrl: './announcements-page.scss',
 })
 export class AnnouncementsPage {
-  readonly announcements: Announcement[] = [...data].sort((a, b) => b.date.localeCompare(a.date));
+  readonly announcements: Announcement[] = (data as unknown as Announcement[]).slice().sort((a, b) => b.date.localeCompare(a.date));
 }

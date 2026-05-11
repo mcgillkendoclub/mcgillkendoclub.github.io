@@ -9,6 +9,8 @@
     <div class="announcements-list">
         @for (announcement of announcements; track announcement.title) {
             <app-announcement-blog-post [announcement]="announcement"></app-announcement-blog-post>
+        } @empty {
+            <p class="announcements-empty">{{ 'ANNOUNCEMENTS.EMPTY' | translate }}</p>
         }
     </div>
 </div>

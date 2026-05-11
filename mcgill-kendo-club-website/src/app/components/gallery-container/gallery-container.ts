@@ -24,7 +24,7 @@ export class GalleryContainer implements OnInit {
   }
 
   private sortPhotosByDate() {
-    this.photos = [...data].sort((a, b) => b.date.localeCompare(a.date));
+    this.photos = (data as unknown as GalleryPhoto[]).slice().sort((a, b) => b.date.localeCompare(a.date));
     this.columns = Array.from({ length: this.columnCount }, () => []);
     this.photos.forEach((photo, i) => this.columns[i % this.columnCount].push(photo));
   }

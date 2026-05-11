@@ -20,7 +20,19 @@
     "FOLLOW_US": "Follow Us"
   },
   "HOME": {
-    "SIGN_UP_BTN": "Sign Up Now! 🙏"
+    "SIGN_UP_BTN": "Sign Up Now! 🙏",
+    "PRACTICE_TITLE": "Practice Schedule",
+    "PRACTICE_LOCATION": "McGill Athletics",
+    "PRACTICE_ADDRESS": "4475 Ave des Pins Ouest, Montréal, QC H2W 1S4",
+    "PRACTICE_TUE_THU": "Tuesday & Thursday",
+    "PRACTICE_TUE_THU_TIME": "6:30 PM - 8:30 PM",
+    "PRACTICE_SAT": "Saturday",
+    "PRACTICE_SAT_TIME": "10:15 AM - 12:15 PM",
+    "PRACTICE_BEGINNER_NOTE": "Beginners welcome — Tuesdays & Saturdays",
+    "PRACTICE_ADVANCED_NOTE": "Thursdays are for intermediate & advanced practitioners",
+    "SEE_FULL_SCHEDULE": "See full schedule →",
+    "LATEST_ANNOUNCEMENT": "Latest Announcement",
+    "SEE_ALL_ANNOUNCEMENTS": "See all announcements →"
   },
   "GALLERY": {
     "HERO_TITLE": "Gallery",
@@ -33,7 +45,8 @@
   },
   "ANNOUNCEMENTS": {
     "HERO_TITLE": "Announcements & Results",
-    "HERO_SUBTITLE": "Club news, tournament results, and upcoming events"
+    "HERO_SUBTITLE": "Club news, tournament results, and upcoming events",
+    "EMPTY": "No announcements yet — check back soon."
   },
   "SIGNUP": {
     "HERO_TITLE": "Join McGill Kendo Club",
