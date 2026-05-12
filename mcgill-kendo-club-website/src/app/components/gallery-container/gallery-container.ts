@@ -18,7 +18,7 @@ export class GalleryContainer implements OnInit {
   readonly columnCount = 3;
   columns: GalleryPhoto[][] = [];
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.sortPhotosByDate();
   }
 
@@ -32,20 +32,20 @@ export class GalleryContainer implements OnInit {
     return `assets/gallery/${filename}`;
   }
 
-  open(index: number) {
+  open(index: number): void {
     this.activeIndex = index;
   }
 
-  close() {
+  close(): void {
     this.activeIndex = null;
   }
 
-  prev() {
+  prev(): void {
     if (this.activeIndex !== null)
       this.activeIndex = (this.activeIndex - 1 + this.photos.length) % this.photos.length;
   }
 
-  next() {
+  next(): void {
     if (this.activeIndex !== null)
       this.activeIndex = (this.activeIndex + 1) % this.photos.length;
   }
@@ -55,7 +55,7 @@ export class GalleryContainer implements OnInit {
   }
 
   @HostListener('document:keydown', ['$event'])
-  onKey(e: KeyboardEvent) {
+  onKey(e: KeyboardEvent): void {
     if (this.activeIndex === null) return;
     if (e.key === 'Escape') this.close();
     if (e.key === 'ArrowLeft') this.prev();

@@ -24,36 +24,36 @@ export class HomePage implements OnInit, OnDestroy {
   slideIndex = 0;
   private slideTimer: ReturnType<typeof setInterval> | null = null;
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.startTimer();
   }
 
-  ngOnDestroy() {
+  ngOnDestroy(): void {
     this.stopTimer();
   }
 
-  private startTimer() {
+  private startTimer(): void {
     if (this.slides.length > 1) {
       this.slideTimer = setInterval(() => this.nextSlide(), 5000);
     }
   }
 
-  private stopTimer() {
+  private stopTimer(): void {
     if (this.slideTimer) {
       clearInterval(this.slideTimer);
       this.slideTimer = null;
     }
   }
 
-  nextSlide() {
+  nextSlide(): void {
     this.slideIndex = (this.slideIndex + 1) % this.slides.length;
   }
 
-  prevSlide() {
+  prevSlide(): void {
     this.slideIndex = (this.slideIndex - 1 + this.slides.length) % this.slides.length;
   }
 
-  goToSlide(i: number) {
+  goToSlide(i: number): void {
     this.stopTimer();
     this.slideIndex = i;
     this.startTimer();
@@ -63,6 +63,11 @@ export class HomePage implements OnInit, OnDestroy {
     return `assets/home-page/${filename}`;
   }
 
-  pauseSlideshow() { this.stopTimer(); }
-  resumeSlideshow() { this.startTimer(); }
+  pauseSlideshow(): void {
+    this.stopTimer(); 
+  }
+  
+  resumeSlideshow(): void { 
+    this.startTimer(); 
+  }
 }

@@ -14,21 +14,25 @@ export class GeneralHeader {
 
   constructor(private translate: TranslateService) {}
 
-  get currentLang() { return this.translate.getCurrentLang() || 'en'; }
+  get currentLang(): string { 
+    return this.translate.getCurrentLang() || 'en'; 
+  }
 
-  setLang(lang: string) {
+  setLang(lang: string): void {
     this.translate.use(lang);
     localStorage.setItem('lang', lang);
   }
 
-  toggleMenu() { this.menuOpen = !this.menuOpen; }
+  toggleMenu(): void { 
+    this.menuOpen = !this.menuOpen; 
+  }
 
-  closeMenu() {
+  closeMenu(): void {
     this.menuOpen = false;
     this.activeDropdown = null;
   }
 
-  toggleDropdown(name: string, event: Event) {
+  toggleDropdown(name: string, event: Event): void {
     event.preventDefault();
     event.stopPropagation();
     this.activeDropdown = this.activeDropdown === name ? null : name;
