@@ -24,6 +24,19 @@
 
     <!-- Google Form -->
     <div class="form-panel">
+
+      <div class="payment-info">
+        <h3 class="payment-title">{{ 'SIGNUP.PAYMENT_TITLE' | translate }}</h3>
+        <p class="payment-detail">
+          {{ 'SIGNUP.PAYMENT_DETAIL' | translate }}
+          <button class="copy-email" (click)="copyEmail()">{{ paymentEmail }}</button>
+          @if (emailCopied) {
+            <span class="copy-confirm" [class.fading]="emailFading">{{ 'SIGNUP.PAYMENT_COPIED' | translate }}</span>
+          }
+        </p>
+        <p class="payment-note">{{ 'SIGNUP.PAYMENT_NOTE' | translate }}</p>
+      </div>
+
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLScV9aFQDGseYdfuhJBclI9M2h5beXZwufz5jILxsAfCbjTrVQ/viewform?embedded=true"
         width="100%"

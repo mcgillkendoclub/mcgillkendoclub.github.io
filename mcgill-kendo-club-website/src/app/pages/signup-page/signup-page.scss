@@ -76,6 +76,65 @@ $text-muted: #555;
   }
 }
 
+// ── Payment info ──────────────────────────────────────────────────────────────
+
+.payment-info {
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid $mcgill-red;
+  background: #fff8f8;
+  border-radius: 0 4px 4px 0;
+  font-family: sans-serif;
+}
+
+.payment-title {
+  margin: 0 0 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: $mcgill-red;
+}
+
+.payment-detail {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  color: $text-dark;
+}
+
+.payment-note {
+  margin: 0;
+  font-size: 0.9rem;
+  color: $text-muted;
+}
+
+.copy-email {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: $mcgill-red;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s;
+
+  &:hover { color: darken($mcgill-red, 10%); }
+
+}
+
+.copy-confirm {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #2a9d2a;
+  margin-left: 0.4rem;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+
+  &.fading { opacity: 0; }
+}
+
 // ── Responsive ────────────────────────────────────────────────────────────────
 
 @media (max-width: 768px) {

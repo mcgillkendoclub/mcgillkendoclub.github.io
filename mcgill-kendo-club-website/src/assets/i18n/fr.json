@@ -51,7 +51,11 @@
   "SIGNUP": {
     "HERO_TITLE": "Rejoignez le Club Kendo de McGill",
     "HERO_SUBTITLE": "Remplissez le formulaire ci-dessous pour vous inscrire au prochain semestre.",
-    "LOADING": "Chargement…"
+    "LOADING": "Chargement…",
+    "PAYMENT_TITLE": "Paiement",
+    "PAYMENT_DETAIL": "Virement Interac somme exacte à",
+    "PAYMENT_NOTE": "Seuls les virements Interac sont acceptés pour le moment.",
+    "PAYMENT_COPIED": "Copié !"
   },
   "TOURNAMENT_RESULTS": {
     "HERO_TITLE": "Résultats de Tournoi",

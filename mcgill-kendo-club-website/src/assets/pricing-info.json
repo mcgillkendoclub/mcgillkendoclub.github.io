@@ -14,7 +14,7 @@
             ]
         },
         {
-            "price": "230-260",
+            "price": "260",
             "semester": "Winter or Fall",
             "pricingInterval": "per semester",
             "includedBenefits": [
@@ -26,18 +26,9 @@
             ],
             "importantNotes":[
                 "Thursday practices are reserved for intermediate and advanced practitioners.",
-                "Beginner classes are only offered on Tuesdays and Saturdays."
-            ]
-        },
-        {
-            "price": "10",
-            "pricingInterval": "per practice",
-            "semester": "One-time",
-            "includedBenefits": [
-                
-            ],
-            "importantNotes":[
-                
+                "Beginner classes are only offered on Tuesdays and Saturdays.",
+                "Pricing not set for 2026-2027 academic year. Please check back later for updates."
+
             ]
         }
     ]

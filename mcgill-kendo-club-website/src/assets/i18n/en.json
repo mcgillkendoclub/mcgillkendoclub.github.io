@@ -51,7 +51,11 @@
   "SIGNUP": {
     "HERO_TITLE": "Join McGill Kendo Club",
     "HERO_SUBTITLE": "Fill out the form below to register for the upcoming semester.",
-    "LOADING": "Loading…"
+    "LOADING": "Loading…",
+    "PAYMENT_TITLE": "Payment",
+    "PAYMENT_DETAIL": "E-transfer exact payment to",
+    "PAYMENT_NOTE": "Only E-transfer payments are accepted at this time.",
+    "PAYMENT_COPIED": "Copied!"
   },
   "TOURNAMENT_RESULTS": {
     "HERO_TITLE": "Tournament Results",
