@@ -86,7 +86,6 @@ $mobile-breakpoint: 768px;
       }
     }
 
-    &.has-dropdown:hover .dropdown { display: block; }
   }
 
   .dropdown-toggle { display: none; }
@@ -160,6 +159,12 @@ $mobile-breakpoint: 768px;
       }
     }
   }
+}
+
+// ── Desktop dropdown hover (must not apply on touch/mobile) ───────────────────
+
+@media (min-width: #{$mobile-breakpoint + 1}) {
+  .main-nav .nav-item.has-dropdown:hover .dropdown { display: block; }
 }
 
 // ── Mobile ────────────────────────────────────────────────────────────────────
@@ -253,8 +258,6 @@ $mobile-breakpoint: 768px;
     }
 
     .has-dropdown {
-      &:hover .dropdown { display: none; }
-
       &.dropdown-open {
         .dropdown-toggle { transform: rotate(180deg); }
 
