@@ -19,7 +19,6 @@
         <h2>{{ 'ABOUT.S01_TITLE' | translate }}</h2>
       </div>
       <p [innerHTML]="'ABOUT.S01_P1' | translate"></p>
-      <p [innerHTML]="'ABOUT.S01_P2' | translate"></p>
     </div>
   </section>
 
@@ -33,10 +32,10 @@
       <p [innerHTML]="'ABOUT.S02_P1' | translate"></p>
       <p>{{ 'ABOUT.S02_P2' | translate }}</p>
       <ul class="philosophy-list">
-        <li [innerHTML]="'ABOUT.S02_REI' | translate"></li>
         <li [innerHTML]="'ABOUT.S02_KI' | translate"></li>
         <li [innerHTML]="'ABOUT.S02_KEN' | translate"></li>
         <li [innerHTML]="'ABOUT.S02_TAI' | translate"></li>
+        <li [innerHTML]="'ABOUT.S02_ICHI' | translate"></li>
       </ul>
       <blockquote>
         {{ 'ABOUT.S02_QUOTE' | translate }}
@@ -118,7 +117,6 @@
         <span class="section-number">05</span>
         <h2>{{ 'ABOUT.S05_TITLE' | translate }}</h2>
       </div>
-      <p [innerHTML]="'ABOUT.S05_INTRO' | translate"></p>
       <div class="rank-table">
         <div class="rank-row rank-header">
           <span>{{ 'ABOUT.S05_RANK_COL' | translate }}</span>
@@ -126,24 +124,29 @@
           <span>{{ 'ABOUT.S05_NOTES_COL' | translate }}</span>
         </div>
         <div class="rank-row">
-          <span class="rank-badge kyu">6-1 Kyu</span>
+          <span class="rank-badge kyu">Mudansha (6-1 Kyu)</span>
           <span>{{ 'ABOUT.S05_KYU_LEVEL' | translate }}</span>
           <span>{{ 'ABOUT.S05_KYU_NOTES' | translate }}</span>
         </div>
         <div class="rank-row">
-          <span class="rank-badge shodan">1 Dan (Shodan)</span>
-          <span>{{ 'ABOUT.S05_SHODAN_LEVEL' | translate }}</span>
-          <span>{{ 'ABOUT.S05_SHODAN_NOTES' | translate }}</span>
+          <span class="rank-badge shodan">1-2 Dan </span>
+          <span>{{ 'ABOUT.S05_1-2_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_1-2_NOTES' | translate }}</span>
         </div>
         <div class="rank-row">
-          <span class="rank-badge dan">2-4 Dan</span>
-          <span>{{ 'ABOUT.S05_24DAN_LEVEL' | translate }}</span>
-          <span>{{ 'ABOUT.S05_24DAN_NOTES' | translate }}</span>
+          <span class="rank-badge shodan">3-4 Dan</span>
+          <span>{{ 'ABOUT.S05_3-4_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_3-4_NOTES' | translate }}</span>
         </div>
         <div class="rank-row">
-          <span class="rank-badge dan">5-8 Dan</span>
-          <span>{{ 'ABOUT.S05_58DAN_LEVEL' | translate }}</span>
-          <span>{{ 'ABOUT.S05_58DAN_NOTES' | translate }}</span>
+          <span class="rank-badge shodan">5-7 Dan</span>
+          <span>{{ 'ABOUT.S05_5-7_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_5-7_NOTES' | translate }}</span>
+        </div>
+        <div class="rank-row">
+          <span class="rank-badge shodan">8 Dan</span>
+          <span>{{ 'ABOUT.S05_8_LEVEL' | translate }}</span>
+          <span>{{ 'ABOUT.S05_8_NOTES' | translate }}</span>
         </div>
         <div class="rank-row">
           <span class="rank-badge hanshi">Renshi / Kyoshi / Hanshi</span>
