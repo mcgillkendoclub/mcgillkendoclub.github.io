@@ -1,3 +1,100 @@
 [
-  
+  {
+    "tournamentName": "Canadian Kendo Federation National Championship",
+    "date": "2025-03-15",
+    "location": "Toronto, ON",
+    "results": [
+      {
+        "category": "Individual Men — Shodan & Above",
+        "competitors": [
+          { "competitorName": "Alexander Monteil", "result": 2 },
+          { "competitorName": "Simon On", "result": 3 }
+        ]
+      },
+      {
+        "category": "Team Men",
+        "competitors": [
+          { "competitorName": "McGill Kendo Club A", "result": 3 }
+        ]
+      }
+    ]
+  },
+  {
+    "tournamentName": "Tournoi de Kendo de Montréal",
+    "date": "2024-11-09",
+    "location": "Montréal, QC",
+    "results": [
+      {
+        "category": "Individual Men — Kyu",
+        "competitors": [
+          { "competitorName": "Étienne Lapointe", "result": 1 },
+          { "competitorName": "Marcus Lee", "result": 3 }
+        ]
+      },
+      {
+        "category": "Individual Women — All Grades",
+        "competitors": [
+          { "competitorName": "Sophie Tremblay", "result": 1 },
+          { "competitorName": "Mei Lin", "result": 2 }
+        ]
+      },
+      {
+        "category": "Individual Men — Shodan & Above",
+        "competitors": [
+          { "competitorName": "Simon On", "result": 2 }
+        ]
+      }
+    ]
+  },
+  {
+    "tournamentName": "Quebec Open Kendo Tournament",
+    "date": "2024-04-20",
+    "location": "Québec City, QC",
+    "results": [
+      {
+        "category": "Individual Men — Kyu",
+        "competitors": [
+          { "competitorName": "Marcus Lee", "result": 2 },
+          { "competitorName": "David Nguyen", "result": 3 }
+        ]
+      },
+      {
+        "category": "Individual Women — All Grades",
+        "competitors": [
+          { "competitorName": "Sophie Tremblay", "result": 3 }
+        ]
+      },
+      {
+        "category": "Team Mixed",
+        "competitors": [
+          { "competitorName": "McGill Kendo Club", "result": 1 }
+        ]
+      }
+    ]
+  },
+  {
+    "tournamentName": "Eastern Canada Kendo Championship",
+    "date": "2023-10-28",
+    "location": "Ottawa, ON",
+    "results": [
+      {
+        "category": "Individual Men — Sandan & Above",
+        "competitors": [
+          { "competitorName": "Alexander Monteil", "result": 3 }
+        ]
+      },
+      {
+        "category": "Individual Women — All Grades",
+        "competitors": [
+          { "competitorName": "Mei Lin", "result": 1 }
+        ]
+      },
+      {
+        "category": "Team Men",
+        "competitors": [
+          { "competitorName": "McGill Kendo Club A", "result": 2 }
+        ]
+      }
+    ]
+  }
 ]

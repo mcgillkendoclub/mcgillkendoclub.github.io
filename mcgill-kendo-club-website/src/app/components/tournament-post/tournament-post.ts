@@ -15,15 +15,15 @@ export class TournamentPost {
   medalImage(result: string | number): string | null {
     if (typeof result === 'string') {
       const n = result.trim().toLowerCase();
-      if (n.startsWith('1')) return 'assets/icons/gold_medal.png';
-      if (n.startsWith('2')) return 'assets/icons/silver_medal.png';
-      if (n.startsWith('3')) return 'assets/icons/bronze_medal.png';
+      if (n.startsWith('1')) return 'icons/gold_medal.png';
+      if (n.startsWith('2')) return 'icons/silver_medal.png';
+      if (n.startsWith('3')) return 'icons/bronze_medal.png';
       return null;
     }
     switch (result) {
-      case 1: return 'assets/icons/gold_medal.png';
-      case 2: return 'assets/icons/silver_medal.png';
-      case 3: return 'assets/icons/bronze_medal.png';
+      case 1: return 'icons/gold_medal.png';
+      case 2: return 'icons/silver_medal.png';
+      case 3: return 'icons/bronze_medal.png';
       default: return null;
     }
   }

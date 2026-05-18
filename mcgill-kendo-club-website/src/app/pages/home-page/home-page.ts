@@ -60,7 +60,7 @@ export class HomePage implements OnInit, OnDestroy {
   }
 
   slideSrc(filename: string): string {
-    return `assets/home-page/${filename}`;
+    return `home-page/${filename}`;
   }
 
   pauseSlideshow(): void {

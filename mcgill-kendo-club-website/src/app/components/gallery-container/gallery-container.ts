@@ -29,7 +29,7 @@ export class GalleryContainer implements OnInit {
   }
 
   photoSrc(filename: string): string {
-    return `assets/gallery/${filename}`;
+    return `gallery/${filename}`;
   }
 
   open(index: number): void {
