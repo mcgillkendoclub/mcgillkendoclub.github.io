@@ -43,3 +43,9 @@ $mcgill-red: #ED1B2F;
     flex-direction: column;
     gap: 2rem;
 }
+
+@media (max-width: 600px) {
+    .instructors-page {
+        padding: 2rem 1rem 3rem;
+    }
+}
