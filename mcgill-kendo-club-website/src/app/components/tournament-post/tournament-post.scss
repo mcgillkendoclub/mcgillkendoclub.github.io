@@ -69,6 +69,7 @@ $mcgill-red: #ED1B2F;
     color: #888;
 
     &:last-child {
+      width: 8rem;
       text-align: center;
     }
   }
@@ -79,6 +80,7 @@ $mcgill-red: #ED1B2F;
     border-top: 1px solid #f0f0f0;
 
     &:last-child {
+      width: 8rem;
       text-align: center;
     }
   }
@@ -86,4 +88,11 @@ $mcgill-red: #ED1B2F;
   tbody tr:hover {
     background: #fafafa;
   }
+}
+
+.medal-icon {
+  width: 2rem;
+  height: 2rem;
+  object-fit: contain;
+  vertical-align: middle;
 }

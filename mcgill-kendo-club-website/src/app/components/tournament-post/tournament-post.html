@@ -23,7 +23,13 @@
             @for (entry of categoryResult.competitors; track entry.competitorName) {
               <tr>
                 <td>{{ entry.competitorName }}</td>
-                <td>{{ medal(entry.result) }}</td>
+                <td>
+                  @if (medalImage(entry.result); as src) {
+                    <img [src]="src" [alt]="medal(entry.result)" class="medal-icon">
+                  } @else {
+                    {{ medal(entry.result) }}
+                  }
+                </td>
               </tr>
             }
           </tbody>

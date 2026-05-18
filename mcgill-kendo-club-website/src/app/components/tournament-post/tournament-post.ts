@@ -12,29 +12,31 @@ import { TournamentResult } from '@app/interfaces/tournament-results';
 export class TournamentPost {
   @Input() tournament!: TournamentResult;
 
+  medalImage(result: string | number): string | null {
+    if (typeof result === 'string') {
+      const n = result.trim().toLowerCase();
+      if (n.startsWith('1')) return 'assets/icons/gold_medal.png';
+      if (n.startsWith('2')) return 'assets/icons/silver_medal.png';
+      if (n.startsWith('3')) return 'assets/icons/bronze_medal.png';
+      return null;
+    }
+    switch (result) {
+      case 1: return 'assets/icons/gold_medal.png';
+      case 2: return 'assets/icons/silver_medal.png';
+      case 3: return 'assets/icons/bronze_medal.png';
+      default: return null;
+    }
+  }
+
   medal(result: string | number): string {
     if (typeof result === 'string') {
-      const normalizedResult = result.trim().toLowerCase();
-      if (normalizedResult.startsWith('1')) {
-        return '🥇';
-      } else if (normalizedResult.startsWith('2')) {
-        return '🥈';
-      } else if (normalizedResult.startsWith('3')) {
-        return '🥉';
-      }
       return result;
     }
-    else {
-      switch (result) {
-        case 1: 
-          return '🥇';
-        case 2:
-          return '🥈';
-        case 3:
-          return '🥉';
-        default: 
-          return String(result) + 'th';
-      }
+    switch (result) {
+      case 1: return '1st';
+      case 2: return '2nd';
+      case 3: return '3rd';
+      default: return String(result) + 'th';
     }
   }
 }
