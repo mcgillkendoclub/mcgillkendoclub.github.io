@@ -1,4 +1,4 @@
-$mcgill-red: #ED1B2F;
+$mcgill-red: #BE3138;
 
 .home-title {
     text-align: center;
@@ -21,7 +21,7 @@ $mcgill-red: #ED1B2F;
     font-family: sans-serif;
     font-weight: 700;
     color: #ffffff;
-    background-color: #ED1B2F;
+    background-color: #BE3138;
     border: none;
     border-radius: 6px;
     cursor: pointer;
@@ -29,7 +29,7 @@ $mcgill-red: #ED1B2F;
     transition: background-color 0.2s, transform 0.1s;
 
     &:hover {
-        background-color: #c5121f;
+        background-color: darken(#BE3138, 8%);
     }
 
     &:active {
