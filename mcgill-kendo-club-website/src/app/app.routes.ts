@@ -13,10 +13,10 @@ export const routes: Routes = [
     { path: 'home', component: HomePage },
     { path: 'instructors', component: InstructorsPage },
     { path: 'signup', component: SignupPage },
-    { path: 'gallery', component: GalleryPage },
+    //{ path: 'gallery', component: GalleryPage },
     { path: 'kendo', component: AboutKendoPage},
     { path: 'announcements', component: AnnouncementsPage },
     { path: 'calendar', component: CalendarPage },
-    { path: 'tournament-results', component: TournamentResultsPage },
+    //{ path: 'tournament-results', component: TournamentResultsPage },
     { path: '**', redirectTo: '/home' }
 ];

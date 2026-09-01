@@ -1,35 +1,35 @@
 {
     "membershipOptions": [
         {
-            "price": "260",
-            "semester": "Summer",
-            "pricingInterval": "per semester",
+            "price": "150",
+            "semester": "PRICING.BEGINNER.SEMESTER",
+            "pricingInterval": "PRICING.PER_SEMESTER",
             "includedBenefits": [
-                "Access to Tuesday, Thursday and Saturday practices",
-                "Instruction from certified sensei",
-                "Price does not include cost of shinai"
+                "PRICING.BEGINNER.BENEFIT_1",
+                "PRICING.BEGINNER.BENEFIT_2",
+                "PRICING.BEGINNER.BENEFIT_3",
+                "PRICING.BEGINNER.BENEFIT_4",
+                "PRICING.BEGINNER.BENEFIT_5",
+                "PRICING.BEGINNER.BENEFIT_6",
+                "PRICING.BEGINNER.BENEFIT_7"
             ],
-            "importantNotes":[
-                "No beginner class offered during the summer semester"
-            ]
+            "importantNotes": []
         },
         {
-            "price": "260",
-            "semester": "Winter or Fall",
-            "pricingInterval": "per semester",
+            "price": "290",
+            "semester": "PRICING.ADVANCED.SEMESTER",
+            "pricingInterval": "PRICING.PER_SEMESTER",
             "includedBenefits": [
-                "Access to all",
-                "Eligibility to participate in club tournaments and events",
-                "Instruction from certified sensei",
-                "Beginner classes offered",
-                "Price does not include cost of shinai"
+                "PRICING.ADVANCED.BENEFIT_1",
+                "PRICING.ADVANCED.BENEFIT_2",
+                "PRICING.ADVANCED.BENEFIT_3",
+                "PRICING.ADVANCED.BENEFIT_4",
+                "PRICING.ADVANCED.BENEFIT_5",
+                "PRICING.ADVANCED.BENEFIT_6",
+                "PRICING.ADVANCED.BENEFIT_7",
+                "PRICING.ADVANCED.BENEFIT_8"
             ],
-            "importantNotes":[
-                "Thursday practices are reserved for intermediate and advanced practitioners.",
-                "Beginner classes are only offered on Tuesdays and Saturdays.",
-                "Pricing not set for 2026-2027 academic year. Please check back later for updates."
-
-            ]
+            "importantNotes": []
         }
     ]
 }

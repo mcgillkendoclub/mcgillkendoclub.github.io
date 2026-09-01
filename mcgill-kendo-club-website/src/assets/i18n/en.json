@@ -1,21 +1,21 @@
 {
   "NAV": {
-    "TITLE": "McGill Kendo Club",
-    "SUBTITLE": "Official McGill University Kendo Club",
+    "TITLE": "Seishokan Kendo",
+    "SUBTITLE": "At McGill University",
     "HOME": "Home",
     "KENDO": "Kendo",
     "WHAT_IS_KENDO": "What is Kendo?",
     "CLASSES": "Classes & Practices",
     "INSTRUCTORS": "Instructors",
-    "ANNOUNCEMENTS_RESULTS": "Announcements & Results",
+    "ANNOUNCEMENTS_RESULTS": "News",
     "ANNOUNCEMENTS": "Announcements",
     "TOURNAMENT_RESULTS": "Tournament Results",
     "GALLERY": "Gallery",
     "SIGN_UP": "Sign Up"
   },
   "FOOTER": {
-    "CLUB_NAME": "McGill Kendo Club",
-    "COPYRIGHT": "© {{year}} McGill Kendo Club. All rights reserved.",
+    "CLUB_NAME": "Seishokan Kendo Club",
+    "COPYRIGHT": "© {{year}} Seishokan Kendo Club. All rights reserved.",
     "CONTACT": "Contact",
     "FOLLOW_US": "Follow Us"
   },
@@ -23,13 +23,18 @@
     "SIGN_UP_BTN": "Sign Up Now! 🙏",
     "PRACTICE_TITLE": "Practice Schedule",
     "PRACTICE_LOCATION": "McGill Athletics",
-    "PRACTICE_ADDRESS": "4475 Ave des Pins Ouest, Montréal, QC H2W 1S4",
-    "PRACTICE_TUE_THU": "Tuesday & Thursday",
-    "PRACTICE_TUE_THU_TIME": "6:30 PM - 8:30 PM",
+    "PRACTICE_ADDRESS": "475 Ave des Pins Ouest, Montréal, QC H2W 1S4",
+    "PRACTICE_TUE": "Tuesday",
+    "PRACTICE_TUE_TIME": "8:00 PM – 10:00 PM",
+    "PRACTICE_TUE_LEVEL": "Beginners & Advanced",
+    "PRACTICE_THU": "Thursday",
+    "PRACTICE_THU_TIME": "8:30 PM – 10:00 PM",
+    "PRACTICE_THU_LEVEL": "Advanced",
     "PRACTICE_SAT": "Saturday",
-    "PRACTICE_SAT_TIME": "10:15 AM - 12:15 PM",
+    "PRACTICE_SAT_TIME": "9:15 AM – 11:15 AM",
+    "PRACTICE_SAT_LEVEL": "Beginners & Advanced",
     "PRACTICE_BEGINNER_NOTE": "Beginners welcome — Tuesdays & Saturdays",
-    "PRACTICE_ADVANCED_NOTE": "Thursdays are for intermediate & advanced practitioners",
+    "PRACTICE_ADVANCED_NOTE": "Advanced practitioners welcome all three days",
     "SEE_FULL_SCHEDULE": "See full schedule →",
     "LATEST_ANNOUNCEMENT": "Latest Announcement",
     "SEE_ALL_ANNOUNCEMENTS": "See all announcements →"
@@ -49,7 +54,7 @@
     "EMPTY": "No announcements yet — check back soon."
   },
   "SIGNUP": {
-    "HERO_TITLE": "Join McGill Kendo Club",
+    "HERO_TITLE": "Join Seishokan Kendo Club",
     "HERO_SUBTITLE": "Fill out the form below to register for the upcoming semester.",
     "LOADING": "Loading…",
     "PAYMENT_TITLE": "Payment",
@@ -81,7 +86,7 @@
     "S02_TAI": "<strong>Tai (体)</strong> — Posture, footwork, and body movement working in harmony.",
     "S02_ICHI": "<strong>Ichi (一)</strong> — The unity of spirit, sword, and body in a single strike.",
     "S02_QUOTE": "\"Happy Kendo\"",
-    "S02_CITE": "— McGill Kendo Club Motto",
+    "S02_CITE": "— Seishokan Kendo Club Motto",
     "S03_TITLE": "Equipment",
     "S03_INTRO": "Kendo requires specialised gear. Beginners typically start with just a shinai and gradually add armour as they advance. A full set of bogu is a significant investment but lasts many years with proper care.",
     "S03_SHINAI_DESC": "A sword made of four bamboo staves bound together, used for all sparring and drills. Standard adult shinai are 120 cm (men) or 112 cm (women).",
@@ -99,7 +104,7 @@
     "S04_SCORING_TITLE": "Scoring Targets",
     "S04_SCORING_DESC": "Valid targets are <em>men</em> (head), <em>kote</em> (right wrist), <em>do</em> (right torso), and <em>tsuki</em> (throat thrust). Each must be accompanied by a kiai and correct zanshin (remaining spirit).",
     "S04_LOCAL_TITLE": "Local & National Events",
-    "S04_LOCAL_DESC": "McGill Kendo Club participates in inter-university tournaments across Quebec and Canada, including events sanctioned by the Canadian Kendo Federation (CKF).",
+    "S04_LOCAL_DESC": "Seishokan Kendo Club participates in inter-university tournaments across Quebec and Canada, including events sanctioned by the Canadian Kendo Federation (CKF).",
     "S05_TITLE": "Gradings & Progression",
     "S05_RANK_COL": "Rank",
     "S05_LEVEL_COL": "Level",
@@ -116,5 +121,29 @@
     "S05_8_NOTES": "The highest rank — kendo Godhood — fewer than 200 people hold it worldwide.",
     "S05_HANSHI_LEVEL": "Teaching Titles",
     "S05_HANSHI_NOTES": "Honorary titles awarded alongside high dan grades, recognising outstanding teaching and contribution to kendo."
+  },
+  "PRICING": {
+    "PER_SEMESTER": "per semester",
+    "BEGINNER": {
+      "SEMESTER": "Beginner Practice - Fall 2026",
+      "BENEFIT_1": "Eligibility to participate in club tournaments",
+      "BENEFIT_2": "Instruction from certified sensei",
+      "BENEFIT_3": "Shinai (bamboo sword, $40) not included in price",
+      "BENEFIT_4": "Starts Tuesday, 22/09/2026 and ends Saturday, 12/12/2026",
+      "BENEFIT_5": "No practice during reading week",
+      "BENEFIT_6": "Tuesday 8:00 PM – 10:00 PM",
+      "BENEFIT_7": "Saturday 9:15 AM – 11:15 AM"
+    },
+    "ADVANCED": {
+      "SEMESTER": "Advanced Practice - Fall 2026",
+      "BENEFIT_1": "Must be in bogu",
+      "BENEFIT_2": "Eligibility to participate in club tournaments",
+      "BENEFIT_3": "Instruction from certified sensei",
+      "BENEFIT_4": "Starts Tuesday, 25/08/2026 and ends Saturday, 12/12/2026",
+      "BENEFIT_5": "No practice during reading week",
+      "BENEFIT_6": "Tuesday 8:00 PM – 10:00 PM",
+      "BENEFIT_7": "Thursday 8:30 PM – 10:00 PM",
+      "BENEFIT_8": "Saturday 9:15 AM – 11:15 AM"
+    }
   }
 }
