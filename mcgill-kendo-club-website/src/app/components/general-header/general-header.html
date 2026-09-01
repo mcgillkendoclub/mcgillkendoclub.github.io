@@ -2,8 +2,11 @@
   <div class="header-top">
     <div class="home-title">
       <a routerLink="/home" class="title-link" (click)="closeMenu()">
-        <h1>{{ 'NAV.TITLE' | translate }}</h1>
-        <p>{{ 'NAV.SUBTITLE' | translate }}</p>
+        <span class="kanji-seal">西松館</span>
+        <div class="title-text">
+          <h1>{{ 'NAV.TITLE' | translate }}</h1>
+          <p>{{ 'NAV.SUBTITLE' | translate }}</p>
+        </div>
       </a>
     </div>
     <button class="hamburger" [class.open]="menuOpen" (click)="toggleMenu()" aria-label="Toggle navigation">

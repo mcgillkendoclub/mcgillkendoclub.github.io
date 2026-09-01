@@ -30,11 +30,17 @@ $mobile-breakpoint: 768px;
   text-align: center;
 
   .title-link {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
     text-decoration: none;
     color: inherit;
 
     &:hover h1 { color: darken($mcgill-red, 10%); }
+    &:hover .kanji-seal { opacity: 1; }
   }
+
+  .title-text { text-align: center; }
 
   h1 {
     margin: 0 0 0.25rem;
@@ -48,6 +54,21 @@ $mobile-breakpoint: 768px;
     font-size: 1rem;
     color: $text-muted;
   }
+}
+
+.kanji-seal {
+  writing-mode: vertical-rl;
+  font-family: serif;
+  font-size: 1.65rem;
+  letter-spacing: 0.25em;
+  color: $mcgill-red;
+  border: 2px solid $mcgill-red;
+  padding: 0.55rem 0.4rem;
+  border-radius: 3px;
+  flex-shrink: 0;
+  opacity: 0.75;
+  transition: opacity 0.2s;
+  user-select: none;
 }
 
 .hamburger { display: none; }
