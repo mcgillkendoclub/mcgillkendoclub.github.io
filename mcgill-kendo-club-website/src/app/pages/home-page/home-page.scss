@@ -133,7 +133,7 @@ $mcgill-red: #BE3138;
 .see-all-link {
     display: inline-block;
     margin-top: 1.1rem;
-    font-size: 0.875rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: $mcgill-red;
     text-decoration: none;
@@ -167,7 +167,7 @@ $mcgill-red: #BE3138;
 
 .practice-location {
     margin: 1.25rem 0 2rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: #666;
     display: flex;
     align-items: center;
@@ -196,7 +196,7 @@ $mcgill-red: #BE3138;
     min-width: 180px;
 
     .day-label {
-        font-size: 0.75rem;
+        font-size: 0.95rem;
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.12em;
@@ -205,14 +205,14 @@ $mcgill-red: #BE3138;
     }
 
     .day-time {
-        font-size: 1.2rem;
+        font-size: 1.35rem;
         font-weight: 600;
         color: #1a1a1a;
     }
 
     .day-level {
         margin-top: 0.4rem;
-        font-size: 0.75rem;
+        font-size: 0.95rem;
         color: #888;
     }
 }
@@ -220,7 +220,7 @@ $mcgill-red: #BE3138;
 .practice-notes {
     p {
         margin: 0.3rem 0;
-        font-size: 0.85rem;
+        font-size: 1.05rem;
         color: #888;
     }
 }
