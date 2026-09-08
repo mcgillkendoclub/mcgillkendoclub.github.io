@@ -111,13 +111,15 @@ $text-muted: #555;
 
     @media (max-width: 600px) {
         grid-template-columns: 1fr;
-        grid-template-rows: 280px auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto;
 
         .instructor-photo {
             grid-column: 1;
             grid-row: 1;
             min-height: unset;
-            height: 280px;
+            height: auto;
+            width: 100%;
+            object-fit: contain;
         }
 
         h3 {
