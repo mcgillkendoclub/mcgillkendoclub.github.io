@@ -1,39 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://mcgillkendoclub.github.io/</loc>
+    <loc>https://seishokan.ca/</loc>
     <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://mcgillkendoclub.github.io/#/home</loc>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://mcgillkendoclub.github.io/#/kendo</loc>
+    <loc>https://seishokan.ca/about-kendo</loc>
     <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://mcgillkendoclub.github.io/#/calendar</loc>
+    <loc>https://seishokan.ca/instructors</loc>
     <priority>0.8</priority>
+    <changefreq>yearly</changefreq>
   </url>
   <url>
-    <loc>https://mcgillkendoclub.github.io/#/instructors</loc>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://mcgillkendoclub.github.io/#/announcements</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mcgillkendoclub.github.io/#/tournament-results</loc>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://mcgillkendoclub.github.io/#/gallery</loc>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://mcgillkendoclub.github.io/#/signup</loc>
+    <loc>https://seishokan.ca/signup</loc>
     <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://seishokan.ca/announcements</loc>
+    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://seishokan.ca/gallery</loc>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://seishokan.ca/calendar</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
   </url>
 </urlset>
