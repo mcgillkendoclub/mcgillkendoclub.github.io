@@ -1,7 +1,7 @@
 {
     "membershipOptions": [
         {
-            "price": "150",
+            "price": "140",
             "semester": "PRICING.BEGINNER.SEMESTER",
             "pricingInterval": "PRICING.PER_SEMESTER",
             "includedBenefits": [
