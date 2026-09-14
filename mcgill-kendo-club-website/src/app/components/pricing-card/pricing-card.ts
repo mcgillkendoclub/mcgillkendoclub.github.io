@@ -13,4 +13,5 @@ export class PricingCard {
   @Input() pricingInterval!: string;
   @Input() includedBenefits!: string[];
   @Input() importantNotes!: string[];
+  @Input() active: boolean = false;
 }

@@ -57,6 +57,7 @@
     "HERO_TITLE": "Join Seishokan Kendo Club",
     "HERO_SUBTITLE": "Fill out the form below to register for the upcoming semester.",
     "LOADING": "Loading…",
+    "FORM_PROMPT": "Please fill out the form below for your selected membership.",
     "PAYMENT_TITLE": "Payment",
     "PAYMENT_DETAIL": "E-transfer exact payment to",
     "PAYMENT_NOTE": "Only E-transfer payments are accepted at this time.",
@@ -124,6 +125,7 @@
   },
   "PRICING": {
     "PER_SEMESTER": "per semester",
+    "SELECTED": "Selected",
     "BEGINNER": {
       "SEMESTER": "Beginner Practice - Fall 2026",
       "BENEFIT_1": "Eligibility to participate in club tournaments",

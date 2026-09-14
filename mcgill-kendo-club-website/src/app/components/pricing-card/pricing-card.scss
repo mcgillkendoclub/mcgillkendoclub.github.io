@@ -2,13 +2,52 @@ $mcgill-red: #BE3138;
 $text-dark: #1a1a1a;
 $text-muted: #555;
 
+:host {
+  display: block;
+  flex: 1;
+  min-width: 0;
+}
+
 .pricing-card {
+  height: 100%;
+  box-sizing: border-box;
   background: #fff;
   border-radius: 6px;
   border: 1.5px solid rgba(0, 0, 0, 0.22);
   border-top: 3px solid $mcgill-red;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
   padding: 2rem 1.75rem;
+  cursor: pointer;
+  transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
+
+  &:hover {
+    border-color: $mcgill-red;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  &.active {
+    border: 2px solid $mcgill-red;
+    border-top: 3px solid $mcgill-red;
+    box-shadow: 0 6px 28px rgba($mcgill-red, 0.2);
+    transform: translateY(-2px);
+  }
+}
+
+.selected-badge {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  padding: 0.2rem 0.65rem;
+  background: $mcgill-red;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-radius: 3px;
+
+  &.invisible {
+    visibility: hidden;
+  }
 }
 
 .pricing-label {

@@ -15,6 +15,7 @@ import { PricingCardInfo } from '@app/interfaces/pricing-card-info';
 export class SignupPage {
   readonly pricingCards: PricingCardInfo[] = data.membershipOptions;
   readonly paymentEmail: string = 'mcgillkendoclub@gmail.com';
+  selectedIndex: number = 0;
   emailCopied: boolean = false;
   emailFading: boolean = false;
   private copyTimer: ReturnType<typeof setTimeout> | null = null;
@@ -34,5 +35,13 @@ export class SignupPage {
         this.cdr.markForCheck();
       }, 400);
     }, 1600);
+  }
+
+  isSelected(index: number): boolean {
+    return this.selectedIndex === index;
+  }
+
+  changeSelectedIndex(index: number) {
+    this.selectedIndex = index;
   }
 }

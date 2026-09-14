@@ -1,4 +1,5 @@
-<div class="pricing-card">
+<div class="pricing-card" [class.active]="active">
+    <div class="selected-badge" [class.invisible]="!active">&#10003; {{ 'PRICING.SELECTED' | translate }}</div>
     <div class="pricing-label">{{semester | translate}}</div>
     <div class="pricing-amount"><span class="currency">$</span>{{price}}</div>
     <div class="pricing-period">{{pricingInterval | translate}}</div>

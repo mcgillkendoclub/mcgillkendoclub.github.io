@@ -11,19 +11,23 @@
 
     <!-- Pricing -->
     <aside class="pricing-panel">
-        @for (pricingCard of pricingCards; track pricingCard.price) {
+        @for (pricingCard of pricingCards; track pricingCard.price; let i = $index) {
             <app-pricing-card
                 [price]="pricingCard.price"
                 [semester]="pricingCard.semester"
                 [pricingInterval]="pricingCard.pricingInterval"
                 [includedBenefits]="pricingCard.includedBenefits"
-                [importantNotes]="pricingCard.importantNotes">
+                [importantNotes]="pricingCard.importantNotes"
+                [active]="isSelected(i)"
+                (click)="changeSelectedIndex(i)">
             </app-pricing-card>
         }
     </aside>
 
+    <p class="form-prompt">{{ 'SIGNUP.FORM_PROMPT' | translate }}</p>
+
     <!-- Google Form -->
-    <div class="form-panel">
+    <div class="form-panel" id="signup-form">
 
       <div class="payment-info">
         <h3 class="payment-title">{{ 'SIGNUP.PAYMENT_TITLE' | translate }}</h3>
@@ -36,14 +40,26 @@
         </p>
         <p class="payment-note">{{ 'SIGNUP.PAYMENT_NOTE' | translate }}</p>
       </div>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOL7EmVsTx2b0zHz0z60sh8209LOMX2rrj-NxhWyzNrH46Qw/viewform?embedded=true"
-      width="640"
-      height="1800"
-      frameborder="0"
-      marginheight="0"
-      marginwidth="0"
-      scrolling="no">{{ 'SIGNUP.LOADING' | translate }}
-      </iframe>
+
+      @if (selectedIndex === 0) {
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeduL08g10E3BlgK6cHTzgFPiT92n3p8aqqO_eOMeWDCoGZ_g/viewform?embedded=true"
+          width="640"
+          height="1489"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          scrolling="no">{{ 'SIGNUP.LOADING' | translate }}
+        </iframe>
+      } @else {
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScOL7EmVsTx2b0zHz0z60sh8209LOMX2rrj-NxhWyzNrH46Qw/viewform?embedded=true"
+          width="640"
+          height="1800"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          scrolling="no">{{ 'SIGNUP.LOADING' | translate }}
+        </iframe>
+      }
 
   </div>
 </div>
