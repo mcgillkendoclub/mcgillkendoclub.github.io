@@ -28,7 +28,7 @@
     "PRACTICE_TUE_TIME": "20h00 – 22h00",
     "PRACTICE_TUE_LEVEL": "Débutants & Avancés",
     "PRACTICE_THU": "Jeudi",
-    "PRACTICE_THU_TIME": "20h30 – 22h00",
+    "PRACTICE_THU_TIME": "20h00 – 21h30",
     "PRACTICE_THU_LEVEL": "Avancés",
     "PRACTICE_SAT": "Samedi",
     "PRACTICE_SAT_TIME": "9h15 – 11h15",
@@ -144,7 +144,7 @@
       "BENEFIT_4": "Début le mardi 25/08/2026 et fin le samedi 12/12/2026",
       "BENEFIT_5": "Pas de pratique pendant la semaine de lecture",
       "BENEFIT_6": "Mardi 20h00 – 22h00",
-      "BENEFIT_7": "Jeudi 20h30 – 22h00",
+      "BENEFIT_7": "Jeudi 20h00 – 21h30",
       "BENEFIT_8": "Samedi 9h15 – 11h15"
     }
   }

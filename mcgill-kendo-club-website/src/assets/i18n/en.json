@@ -28,7 +28,7 @@
     "PRACTICE_TUE_TIME": "8:00 PM – 10:00 PM",
     "PRACTICE_TUE_LEVEL": "Beginners & Advanced",
     "PRACTICE_THU": "Thursday",
-    "PRACTICE_THU_TIME": "8:30 PM – 10:00 PM",
+    "PRACTICE_THU_TIME": "8:00 PM – 9:30 PM",
     "PRACTICE_THU_LEVEL": "Advanced",
     "PRACTICE_SAT": "Saturday",
     "PRACTICE_SAT_TIME": "9:15 AM – 11:15 AM",
@@ -144,7 +144,7 @@
       "BENEFIT_4": "Starts Tuesday, 25/08/2026 and ends Saturday, 12/12/2026",
       "BENEFIT_5": "No practice during reading week",
       "BENEFIT_6": "Tuesday 8:00 PM – 10:00 PM",
-      "BENEFIT_7": "Thursday 8:30 PM – 10:00 PM",
+      "BENEFIT_7": "Thursday 8:00 PM – 9:30 PM",
       "BENEFIT_8": "Saturday 9:15 AM – 11:15 AM"
     }
   }
