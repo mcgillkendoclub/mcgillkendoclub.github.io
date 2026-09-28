@@ -81,9 +81,14 @@ $text-muted: #555;
 // ── Form panel ────────────────────────────────────────────────────────────────
 
 .form-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   iframe {
     display: block;
     width: 100%;
+    max-width: 640px;
     border-radius: 4px;
     overflow: hidden;
   }
@@ -92,6 +97,9 @@ $text-muted: #555;
 // ── Payment info ──────────────────────────────────────────────────────────────
 
 .payment-info {
+  width: 100%;
+  max-width: 640px;
+  box-sizing: border-box;
   margin-bottom: 1.5rem;
   padding: 1rem 1.25rem;
   background: #fff8f8;
